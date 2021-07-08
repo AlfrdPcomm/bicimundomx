@@ -1,0 +1,316 @@
+{
+  "store.home": {
+    "blocks": [
+      "list-context.image-list#demo",
+      /* You can make references to blocks defined in other files.
+       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
+      "__fold__.experimentalLazyAssets",
+      "flex-layout.row#infocards1",
+      "flex-layout.row#infocards2",
+      "rich-text#shelf-title",
+      "flex-layout.row#shelf",
+      "flex-layout.row#infocards3",
+      "flex-layout.row#title-contador",
+      "flex-layout.row#shelf2",
+      "flex-layout.row#titconoce", 
+      "flex-layout.row#slidermarcas",
+      "flex-layout.row#deals",
+      "newsletter",
+      "flex-layout.row#metodospago"
+    ]
+  },
+
+  "list-context.image-list#demo": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "height": 720,
+      "images": [
+        {
+          "image": "assets/bannerprin.png",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+        },
+        {
+          "image": "assets/bannerprin.png",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+        }
+      ]
+    }
+  },
+  "slider-layout#demo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    }
+  },
+//--------------------- Inicio Renglon IC 1-------------------------------
+  "flex-layout.row#infocards1":{
+    "title":"Row Info-cards 1",
+    "children":[
+      "flex-layout.col#icizq1",
+      "flex-layout.col#icder1"
+    ]
+  },
+  "flex-layout.col#icizq1":{
+    "title":"Columna Info-card izq1",
+    "children":[
+      "info-card#izq1"
+    ]
+  },
+  "flex-layout.col#icder1":{
+    "title":"Columna Info-card der1",
+    "children":[
+      "info-card#der1"
+    ]
+  },"info-card#izq1":{
+    "props": {
+      "isFullModeStyle": true,
+      "textPosition": "left",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "headline": "Descubre nuevas bicicletas",
+      "subhead": "Bicicletas para todos",
+      "callToActionText": "Ver Bicicletas",
+      "callToActionUrl": "/bicicletas",
+      "blockClass": "seccionic",
+      "textAlignment": "left"
+    }
+  },
+  "info-card#der1":{
+    "props": {
+      "isFullModeStyle": true,
+      "textPosition": "left",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "headline": "Descubre nuevas bicicletas",
+      "subhead": "Bicicletas para todos",
+      "callToActionText": "Ver Bicicletas",
+      "callToActionUrl": "/bicicletas",
+      "blockClass": "seccionic",
+      "textAlignment": "left"
+    }
+  },
+
+//--------------------- Final Renglon IC 1-------------------------------
+//--------------------- Inicio Renglon IC 2-------------------------------
+  "flex-layout.row#infocards2":{
+    "children":[
+      "flex-layout.col#icizq2",
+      "flex-layout.col#icder2"
+    ]
+  },
+  "flex-layout.col#icizq2":{
+    "children":[
+      "info-card#izq2"
+    ]
+  },
+  "flex-layout.col#icder2":{
+    "children":[
+      "info-card#der2"
+    ]
+  },"info-card#izq2":{
+    "props": {
+      "isFullModeStyle": true,
+      "textPosition": "left",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "headline": "Descubre nuevas bicicletas",
+      "callToActionText": "Ver Bicicletas",
+      "subhead": "Bicicletas para todos",
+      "callToActionUrl": "/bicicletas",
+      "blockClass": "seccionic",
+      "textAlignment": "left"
+    }
+  },
+  "info-card#der2":{
+    "props": {
+      "isFullModeStyle": true,
+      "textPosition": "left",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "headline": "Descubre nuevas bicicletas",
+      "callToActionText": "Ver Bicicletas",
+      "subhead": "Bicicletas para todos",
+      "callToActionUrl": "/bicicletas",
+      "blockClass": "seccionic",
+      "textAlignment": "left"
+    }
+  },
+//--------------------- Final Renglon IC 1-------------------------------
+//--------------------- Inicio Renglon IC 3-------------------------------
+
+  "flex-layout.row#infocards3":{
+    "children":[
+      "flex-layout.col#icizq3",
+      "flex-layout.col#icder3"
+    ]
+  },
+  "flex-layout.col#icizq3":{
+    "children":[
+      "info-card#izq3"
+    ]
+  },
+  "flex-layout.col#icder3":{
+    "children":[
+      "info-card#der3"
+    ]
+  },"info-card#izq3":{
+    "props": {
+      "isFullModeStyle": true,
+      "textPosition": "left",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "headline": "Descubre nuevas bicicletas",
+      "callToActionText": "Ver Bicicletas",
+      "subhead": "Bicicletas para todos",
+      "callToActionUrl": "/bicicletas",
+      "blockClass": "seccionic",
+      "textAlignment": "left"
+    }
+  },
+  "info-card#der3":{
+    "props": {
+      "isFullModeStyle": true,
+      "textPosition": "left",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "headline": "Descubre nuevas bicicletas",
+      "callToActionText": "Ver Bicicletas",
+      "subhead": "Bicicletas para todos",
+      "callToActionUrl": "/bicicletas",
+      "blockClass": "seccionic",
+      "textAlignment": "left"
+    }
+  },
+
+  //--------------------- Final Renglon IC 3 -------------------------------
+//-------------------------- Inicio titulo contador -------------------------
+  "flex-layout.row#title-contador":{
+    "children":[
+      "flex-layout.col#titshelf",
+      "flex-layout.col#contador"
+    ]
+  },
+  "flex-layout.col#titshelf":{
+    "children":[
+      "rich-text#tituloshelf"
+    ]
+  },"rich-text#tituloshelf":{
+    "props":{
+      "text": "OFERTAS REBAJAS"
+    }
+  },
+  //-------------------------- Final titulo contador -------------------------
+  //-------------------------- Inicio contador -------------------------
+  "flex-layout.col#contador":{
+    "children":[
+      "rich-text#contador"
+    ]
+  },"rich-text#contador":{
+    "props":{
+      "text":"FINALIZA EN: "
+    }
+  },      
+ //-------------------------- Final contador -------------------------
+ //-------------------------- Inicio titulo lo mas vendido -------------------------
+  "rich-text#shelf-title": {
+    "props": {
+      "text": "## LO MÁS VENDIDO",
+      "blockClass": "shelfTitle"
+    }
+  },
+
+  //-------------------------- Final titulo lo mas vendido -------------------------
+
+
+  "flex-layout.row#shelf": {
+    "children": ["list-context.product-list#demo1"]
+  },
+  "list-context.product-list#demo1": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#demo-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  },
+
+  "info-card#home": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "headline": "Clearance Sale",
+      "callToActionText": "DISCOVER",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-home",
+      "textAlignment": "center"
+    }
+  },
+
+// ---------------------- Inicio Shelf ofertas-rebajas -----------------------------
+  "flex-layout.row#shelf2":{
+    "children":[
+      "list-context.product-list#demo2"
+    ]
+  },
+  "list-context.product-list#demo2": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products2"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#demo-products2": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  },
+
+  // ---------------------- Final Shelf ofertas-rebajas -----------------------------
+  // ---------------------- Inicio Slider Conoce marcas -----------------------------
+
+  "flex-layout.row#titconoce":{
+    "children":[
+      "rich-text#titconoce"
+    ]
+  },"rich-text#titconoce":{
+    "props":{
+      "text":"## CONOCE NUESTRAS MARCAS"
+    }
+  },
+  
+  "flex-layout.row#slidermarcas":{
+    "children":[
+
+    ]
+  },
+  
+// ---------------------- Final Slider Conoce marcas -----------------------------
+// ---------------------- Inicio Motores de pago -----------------------------
+"flex-layout.row#metodospago":{
+  "children":[
+
+  ]
+}
+
+// ---------------------- Inicio Motores de pago -----------------------------
+}
