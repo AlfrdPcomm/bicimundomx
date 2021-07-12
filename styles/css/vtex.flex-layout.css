@@ -66,9 +66,9 @@
   align-items: flex-end;
 }
 
-.flexCol--orderByMobileCol {
+/* .flexCol--orderByMobileCol {
   width: 42%;
-}
+} */
 
 .flexCol--filterMobileCol {
   width: 38%;
