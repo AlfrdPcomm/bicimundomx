@@ -7,7 +7,8 @@
       "flex-layout.col#deals4"
     ],
     "props": {
-      "blockClass": "deals"
+      "blockClass": "deals",
+      "preserveLayoutOnMobile":true
     }
   },
 
@@ -15,17 +16,21 @@
     "children": [
       "image#deal1",
       "rich-text#deal1"
-    ]
+    ],"props":{
+      "horizontalAlign":"center",
+      "blockClass":"coldeals"
+    }
   },
   "image#deal1": {
     "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/box.png",
-      "maxHeight": "24px"
+      "src": "assets/sitioseg.svg",
+      "maxHeight": "83px",
+      "blockClass":"imgdeals"
     }
   },
   "rich-text#deal1": {
     "props": {
-      "text": "Free shipping",
+      "text": "Sitio Seguro",
       "blockClass": "deals"
     }
   },
@@ -33,17 +38,21 @@
     "children": [
       "image#deal2",
       "rich-text#deal2"
-    ]
+    ],"props":{
+      "horizontalAlign":"center",
+      "blockClass":"coldeals"
+    }
   },
   "image#deal2": {
     "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/delivery-fast.png",
-      "maxHeight": "24px"
+      "src": "assets/pagotarjeta.svg",
+      "maxHeight": "83px",
+      "blockClass":"imgdeals"
     }
   },
   "rich-text#deal2": {
     "props": {
-      "text": "One day delivery",
+      "text": "Pago con Tarjetas",
       "blockClass": "deals"
     }
   },
@@ -51,17 +60,21 @@
     "children": [
       "image#deal3",
       "rich-text#deal3"
-    ]
+    ],"props":{
+      "horizontalAlign":"center",
+      "blockClass":"coldeals"
+    }
   },
   "image#deal3": {
     "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/store.png",
-      "maxHeight": "24px"
+      "src": "assets/enviogratis.svg",
+      "maxHeight": "83px",
+      "blockClass":"imgdeals"
     }
   },
   "rich-text#deal3": {
     "props": {
-      "text": "Pick up in store",
+      "text": "Envío Gratis",
       "blockClass": "deals"
     }
   },
@@ -69,17 +82,21 @@
     "children": [
       "image#deal4",
       "rich-text#deal4"
-    ]
+    ],"props":{
+      "horizontalAlign":"center",
+      "blockClass":"coldeals"
+    }
   },
   "image#deal4": {
     "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/coupon.png",
-      "maxHeight": "24px"
+      "src": "assets/garantia.svg",
+      "maxHeight": "83px",
+      "blockClass":"imgdeals"
     }
   },
   "rich-text#deal4": {
     "props": {
-      "text": "Exclusive deals",
+      "text": "Garantía",
       "blockClass": "deals"
     }
   }

@@ -7,8 +7,7 @@
       "flex-layout.row#specifications-title",
       "product-specification-group#table",
       "shelf.relatedProducts",
-      "product-reviews",
-      "product-questions-and-answers"
+      "product-reviews"
     ]
   },
   "flex-layout.row#specifications-title": {
@@ -90,7 +89,8 @@
         "desktop": "auto",
         "phone": "16:9"
       },
-      "displayThumbnailsArrows": true
+      "displayThumbnailsArrows": true,
+      "hiddenImages":"imgsku"
     }
   },
   "flex-layout.col#right-col": {

@@ -6,7 +6,10 @@
 }
 
 .productHighlightText {
-  background: antiquewhite;
-  border-radius: 20px;
+  background: #385DAE;
+  border-radius: 0px;
   padding: 5px 10px;
+  color: #ffffff;
+  font-size: 12px;
+  font-family: 'Lato-Bold';
 }

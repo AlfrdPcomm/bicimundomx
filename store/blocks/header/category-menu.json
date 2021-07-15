@@ -15,7 +15,7 @@
   },
   "menu-item#category": {
     "props": {
-      "blockClass":"menprin",
+      "blockClass":["menprin","menicon"],
       "id": "menu-item-category",
       "type": "custom",
       "iconId": null,
@@ -23,8 +23,8 @@
       "itemProps": {
         "type": "internal",
         "noFollow": false,
-        "tagTitle": "Elige por categoría",
-        "text": "Elige por categoría"
+        "tagTitle": "ELIGE POR CATEGORÍA",
+        "text": "ELIGE POR CATEGORÍA "
       }
     },
     "blocks": [
@@ -122,8 +122,8 @@
         "type": "internal",
         "href": "/Marcas",
         "noFollow": false,
-        "tagTitle": "Marcas",
-        "text": "Marcas"
+        "tagTitle": "MARCAS",
+        "text": "MARCAS"
       }
     }
   },
@@ -139,8 +139,8 @@
         "type": "internal",
         "href": "/Montana",
         "noFollow": false,
-        "tagTitle": "Montaña",
-        "text": "Montaña"
+        "tagTitle": "MONTAÑA",
+        "text": "MONTAÑA"
       }
     }
   },
@@ -156,8 +156,8 @@
         "type": "internal",
         "href": "/Carretera",
         "noFollow": false,
-        "tagTitle": "Carretera",
-        "text": "Carretera"
+        "tagTitle": "CARRETERA",
+        "text": "CARRETERA"
       }
     }
   },
@@ -173,8 +173,8 @@
         "type": "internal",
         "href": "/Ciudad",
         "noFollow": false,
-        "tagTitle": "Ciudad",
-        "text": "Ciudad"
+        "tagTitle": "CIUDAD",
+        "text": "CIUDAD"
       }
     }
   },
@@ -190,8 +190,8 @@
         "type": "internal",
         "href": "/Infantil",
         "noFollow": false,
-        "tagTitle": "Infantil",
-        "text": "Infantil"
+        "tagTitle": "INFANTIL",
+        "text": "INFANTIL"
       }
     }
   },
@@ -207,8 +207,8 @@
         "type": "internal",
         "href": "/Ofertas",
         "noFollow": false,
-        "tagTitle": "Ofertas",
-        "text": "Ofertas"
+        "tagTitle": "OFERTAS",
+        "text": "OFERTAS"
       }
     }
   },

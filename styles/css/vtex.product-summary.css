@@ -40,3 +40,10 @@
 .image {
   border-radius: 0.25rem;
 }
+
+:global(.vtex-product-price-1-x-listPrice--summary){
+  font-size: 16px;
+  color: #A0A0A0;
+  font-family: 'Lato-Bold';
+  padding-top: 3px;
+}

@@ -1,7 +1,8 @@
 .container--deals {
-  color: #ffffff;
+  color: #000000;
   text-align: center;
   justify-content: center;
+  font-family: 'Lato-Regular';
 }
 
 .container--shelfTitle {

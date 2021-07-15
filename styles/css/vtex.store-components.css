@@ -1,9 +1,10 @@
 .notificationBarContainer {
   background-color: #0F2A65;
   color: #ffffff;
-  font-weight: 400;  
   text-decoration: none;
   height: 1.5rem !important;
+  font-family: 'Lato-Regular';
+  font-size: 12px;
  
 }
 
@@ -119,3 +120,210 @@
   font-weight: bold;
   font-size: 30px;
 }
+
+/*---------------- Inicio  Estilo Info cards ----------------------*/
+
+:global(.vtex-store-components-3-x-infoCardContainer--seccionic){
+  min-height: 419px;
+  background-position: top;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--colic){
+  padding-top: 3%;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--rowic){
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+:global(.vtex-store-components-3-x-infoCardTextContainer--seccionic){
+  width: 100%;
+  padding-top: 25%;
+}
+
+:global(.vtex-login-2-x-profile){
+  max-width: 100px !important;
+  color: #ffffff !important;
+}
+
+:global(.vtex-store-components-3-x-infoCardHeadline--seccionic),
+:global(.vtex-store-components-3-x-infoCardSubhead){
+  color: #ffffff;
+}
+
+
+:global(.vtex-store-components-3-x-infoCardCallActionContainer--seccionic){
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+
+:global(.vtex-store-components-3-x-infoCardHeadline--seccionic){
+  font-size: 35px;
+}
+
+:global(.vtex-store-components-3-x-infoCardSubhead){
+  margin-top: 0px !important;
+  font-family: 'Lato-Regular';
+  font-size: 25px;
+}
+
+:global(.vtex-store-components-3-x-infoCardCallActionContainer--seccionic)
+ :global(.vtex-button){
+  background-color: #EB0045;
+  border-color: #EB0045;
+  border-radius: 10px;
+  height: 38px !important;
+  font-family: 'Lato-Regular';
+  font-size: 20px;
+}
+
+:global(.vtex-store-components-3-x-infoCardCallActionContainer--seccionic)
+ :global(.vtex-button):hover{
+  background-color: #EB0045;
+  border-color: #EB0045;
+}
+
+
+:global(.vtex-rich-text-0-x-headingLevel2--titconoce),
+:global(.vtex-rich-text-0-x-headingLevel2--offcont),
+:global(.vtex-rich-text-0-x-heading--shelfTitle){
+  color: #0F2A65;
+  font-family: 'Lato-BlackItalic';
+  font-size: 35px;
+}
+
+:global(.vtex-store-components-3-x-infoCardCallActionContainer--seccionic)
+  :global(.vtex-button)
+    :global(.vtex-button__label){
+      text-transform: capitalize;
+      font-size: 20x;
+    }
+/*---------------- Fin  Estilo Info cards ----------------------*/
+/*---------------- Inicio  Estilo summay ----------------------*/
+
+:global(.vtex-wish-list-1-x-outline){
+  content: url(assets/hwishlist.svg);
+}
+
+:global(.vtex-wish-list-1-x-fill){
+  content: url(assets/hwishlistfill.svg);
+}
+
+:global(.vtex-reviews-and-ratings-2-x-star--filled),
+:global(.vtex-reviews-and-ratings-2-x-star--empty){
+  color: #EB0045;
+}
+
+:global(.vtex-product-summary-2-x-productBrandName){
+  color: #385DAE;
+  font-family: 'Lato-Regular';
+  font-size: 14px;
+}
+
+
+:global(.vtex-product-summary-2-x-brandName){
+  color: #385DAE;
+  font-family: 'Lato-Bold';
+  font-size: 16px;  
+}
+
+:global(.vtex-product-summary-2-x-nameContainer){
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+:global(.vtex-flex-layout-0-x-flexCol--productRating){
+  margin-bottom: 0 !important;
+}
+
+:global(.vtex-product-price-1-x-sellingPriceValue--summary){
+  color: #EB0045;
+  font-family: 'Lato-Bold';
+  font-size: 16px;
+}
+
+:global(.vtex-add-to-cart-button-0-x-buttonDataContainer--acbtn){
+  text-transform: capitalize;
+  font-size: 16px;
+  font-family: 'Lato-Bold';
+}
+
+:global(.vtex-product-summary-2-x-element)
+  :global(.vtex-button){
+    border-radius: 20px;
+  }
+/*---------------- Final  Estilo summay ----------------------*/
+
+/*----------------------- Inicio Carrusel Marcas mobile ----------------------*/
+
+:global(.vtex-slider-layout-0-x-slide--carrumarcas){
+  justify-content: center;
+}
+:global(.vtex-slider-layout-0-x-slideChildrenContainer--carrumarcas){
+  width: 70%;
+}
+
+
+/*----------------------- Final Carrusel Marcas mobile ----------------------*/
+
+/*--------------------- Inicio estilo Responsivo --------------------*/
+@media (max-width: 640px){
+
+  :global(.vtex-rich-text-0-x-wrapper--titconoce){
+      text-align: center !important;
+      
+  }  
+
+  :global(.vtex-rich-text-0-x-headingLevel2--titconoce){
+    font-size: 22px;
+  }
+
+  :global(.vtex-store-components-3-x-imageElement--imgdeals){
+    max-width: 61px !important;
+  }
+
+
+}
+
+@media (max-width: 1024px){
+
+  :global(.vtex-flex-layout-0-x-flexColChild--colnewsmob){
+    width: 100%;
+  }
+
+  :global(.vtex-rich-text-0-x-container--txtnews){
+    justify-content: center;
+  }
+
+  :global(.vtex-rich-text-0-x-paragraph--txtnews){
+    text-align: center;
+    font-size: 20px !important;
+    margin-bottom: 5px;
+  }
+
+  :global(.vtex-flex-layout-0-x-flexRowContent--rownewsmob){
+    background-color: #0F2A65;
+    padding-bottom: 20px;
+  }
+
+  :global(.vtex-store-components-3-x-newsletter)
+    :global(.vtex-store-components-3-x-form){
+    padding-left: 0;
+  }
+
+  :global(.vtex-store-components-3-x-imageElement--mpmob){
+    max-height: 30px !important;
+  }
+
+  :global(.vtex-flex-layout-0-x-flexRow--rowpay){
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #ffffff;
+  }
+
+}
+
+/*--------------------- Final estilo Responsivo --------------------*/

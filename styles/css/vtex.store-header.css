@@ -204,7 +204,7 @@
   }
 
   :global(.vtex-styleguide-9-x-input)::-webkit-input-placeholder{
-    font-size: 12px !important;
+    font-size: 12px !important;    
   }
 
   :global(.vtex-store-components-3-x-searchBarContainer)
@@ -238,7 +238,48 @@
   }
 }
 
+:global(.vtex-menu-2-x-submenuWrapper){
+  background-color: #0F2A65;
+  border-top: 3px solid #EB0045;
+}
+
+:global(.vtex-menu-2-x-styledLinkContent--menicon)::after{
+  content: url(assets/expand.png);
+  padding-left: 5px;
+}
 
 
+:global(.vtex-login-2-x-profile),
+:global(.vtex-login-2-x-label),
+:global(.vtex-rich-text-0-x-link--textowish){
+  font-family: 'Lato-Regular';
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+:global(.vtex-styleguide-9-x-input)::-webkit-input-placeholder{
+  font-size: 12px !important;    
+  font-family: 'Lato-Italic';
+  color: #A0A0A0;
+}
+
+
+:global(.vtex-stack-layout-0-x-stackItem--btnwish){
+  left: 75%;
+}
+
+:global(.vtex-login-2-x-content),
+:global(.vtex-login-2-x-content--accountOptions),
+:global(.vtex-login-2-x-arrowUp){
+  background-color: #0F2A65;
+}
+
+:global(.vtex-login-2-x-formTitle){
+  color: #ffffff;
+  font-family: 'Lato-Regular';
+  font-size: 14px;
+  text-transform: uppercase;
+}
 
 /*------------------ Final estilo desktop ---------------------------*/
+

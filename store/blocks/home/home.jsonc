@@ -1,24 +1,139 @@
+
 {
   "store.home": {
     "blocks": [
+      "responsive-layout.desktop",
+      "responsive-layout.tablet",
+      "responsive-layout.phone"      
+    ]
+  },
+
+//------------------------------- Inicio layout phoen --------------------------------------
+"responsive-layout.phone":{
+  "children":[
+    "list-context.image-list#demo",
+      /* You can make references to blocks defined in other files.
+       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
+      "__fold__.experimentalLazyAssets",
+      "flex-layout.row#infocards1",
+      "flex-layout.row#infocards2",
+      "flex-layout.row#titleshelf",
+      "flex-layout.row#shelf",
+      "flex-layout.row#infocards3",
+      "flex-layout.row#title-contador",
+      "flex-layout.row#shelf2",
+      "flex-layout.row#titconoce", 
+      "flex-layout.row#marcasmobile"
+  ]
+},
+
+
+
+//------------------------------- Final layout phoen --------------------------------------
+//------------------------------- Inicio layout tablet --------------------------------------
+
+"responsive-layout.tablet":{
+  "children":[
+    "list-context.image-list#demo",
+      /* You can make references to blocks defined in other files.
+       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
+      "__fold__.experimentalLazyAssets",
+      "flex-layout.row#infocards1",
+      "flex-layout.row#infocards2",
+      "flex-layout.row#titleshelf",
+      "flex-layout.row#shelf",
+      "flex-layout.row#infocards3",
+      "flex-layout.row#title-contador",
+      "flex-layout.row#shelf2",
+      "flex-layout.row#titconoce", 
+      "flex-layout.row#marcasmobile"
+  ]
+},
+
+"flex-layout.row#marcasmobile":{
+  "title":"Row Slider Marcas",
+  "children":[
+    "list-context.image-list#marcas"
+  ]
+},
+"list-context.image-list#marcas": {
+  "children": ["slider-layout#marcas"],
+  "props": {
+    "images": [
+      {
+        "image": "assets/alubike.png"
+      },
+      {
+        "image": "assets/finishline.png"
+      },
+      {
+        "image": "assets/lazer.png"
+      },
+      {
+        "image": "assets/saiguan.jpeg"
+      },
+      {
+        "image": "assets/shimano.png"
+      },
+      {
+        "image": "assets/veloci.png"
+      },
+      {
+        "image": "assets/vittoria.jpeg"
+      },
+      {
+        "image": "assets/wtb.png"
+      }
+    ]
+  }
+},
+"slider-layout#marcas": {
+  "props": {
+    "blockClass":"carrumarcas",
+    "itemsPerPage": {
+      "desktop": 1,
+      "tablet": 3,
+      "phone": 1
+    },
+    "infinite": true,
+    "showNavigationArrows": "mobileOnly",
+    "showPaginationDots": "never"
+  }
+},
+
+
+
+
+//------------------------------- Final layout tablet ----------------------------------------
+
+
+
+
+
+//--------------------------------- Inicio layout Desktop-----------------------------------------
+  "responsive-layout.desktop":{
+    "children":[
       "list-context.image-list#demo",
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
       "__fold__.experimentalLazyAssets",
       "flex-layout.row#infocards1",
       "flex-layout.row#infocards2",
-      "rich-text#shelf-title",
+      "flex-layout.row#titleshelf",
       "flex-layout.row#shelf",
       "flex-layout.row#infocards3",
       "flex-layout.row#title-contador",
       "flex-layout.row#shelf2",
       "flex-layout.row#titconoce", 
-      "flex-layout.row#slidermarcas",
-      "flex-layout.row#deals",
-      "newsletter",
-      "flex-layout.row#metodospago"
+      "flex-layout.row#marcas"
     ]
   },
+
+
+
+
+
+
 
   "list-context.image-list#demo": {
     "children": ["slider-layout#demo-images"],
@@ -45,6 +160,7 @@
       },
       "infinite": true,
       "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "never",
       "blockClass": "carousel"
     }
   },
@@ -54,24 +170,31 @@
     "children":[
       "flex-layout.col#icizq1",
       "flex-layout.col#icder1"
-    ]
+    ],"props":{
+      "fullWidth":true,
+      "blockClass":"rowic"
+    }
   },
   "flex-layout.col#icizq1":{
     "title":"Columna Info-card izq1",
     "children":[
       "info-card#izq1"
-    ]
+    ],"props":{
+      "blockClass":"colic"
+    }
   },
   "flex-layout.col#icder1":{
     "title":"Columna Info-card der1",
     "children":[
       "info-card#der1"
-    ]
+    ],"props":{
+      "blockClass":"colic"
+    }
   },"info-card#izq1":{
     "props": {
       "isFullModeStyle": true,
       "textPosition": "left",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "imageUrl": "assets/icbgizq1.jpeg",
       "headline": "Descubre nuevas bicicletas",
       "subhead": "Bicicletas para todos",
       "callToActionText": "Ver Bicicletas",
@@ -84,11 +207,11 @@
     "props": {
       "isFullModeStyle": true,
       "textPosition": "left",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
-      "headline": "Descubre nuevas bicicletas",
-      "subhead": "Bicicletas para todos",
-      "callToActionText": "Ver Bicicletas",
-      "callToActionUrl": "/bicicletas",
+      "imageUrl": "assets/icbgder1.jpeg",
+      "headline": "Descubre nuevas playeras",
+      "subhead": "Playeras para todos",
+      "callToActionText": "Ver Playeras",
+      "callToActionUrl": "/Playeras",
       "blockClass": "seccionic",
       "textAlignment": "left"
     }
@@ -97,29 +220,37 @@
 //--------------------- Final Renglon IC 1-------------------------------
 //--------------------- Inicio Renglon IC 2-------------------------------
   "flex-layout.row#infocards2":{
+    "title":"Row Info-cards 2",
     "children":[
       "flex-layout.col#icizq2",
       "flex-layout.col#icder2"
-    ]
+    ],"props":{
+      "fullWidth":true,
+      "blockClass":"rowic"
+    }
   },
   "flex-layout.col#icizq2":{
     "children":[
       "info-card#izq2"
-    ]
+    ],"props":{
+      "blockClass":"colic"
+    }
   },
   "flex-layout.col#icder2":{
     "children":[
       "info-card#der2"
-    ]
+    ],"props":{
+      "blockClass":"colic"
+    }
   },"info-card#izq2":{
     "props": {
       "isFullModeStyle": true,
       "textPosition": "left",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
-      "headline": "Descubre nuevas bicicletas",
-      "callToActionText": "Ver Bicicletas",
-      "subhead": "Bicicletas para todos",
-      "callToActionUrl": "/bicicletas",
+      "imageUrl": "assets/icbgizq2.jpeg",
+      "headline": "Descubre nuevos cascos",
+      "callToActionText": "Ver Cascos",
+      "subhead": "Cascos para todos",
+      "callToActionUrl": "/Cascos",
       "blockClass": "seccionic",
       "textAlignment": "left"
     }
@@ -128,11 +259,11 @@
     "props": {
       "isFullModeStyle": true,
       "textPosition": "left",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
-      "headline": "Descubre nuevas bicicletas",
-      "callToActionText": "Ver Bicicletas",
-      "subhead": "Bicicletas para todos",
-      "callToActionUrl": "/bicicletas",
+      "imageUrl": "assets/icbgder2.jpeg",
+      "headline": "El mejor taller",
+      "callToActionText": "Ver Reparación",
+      "subhead": "Reparación de bicicletas",
+      "callToActionUrl": "/Reparacion",
       "blockClass": "seccionic",
       "textAlignment": "left"
     }
@@ -144,26 +275,33 @@
     "children":[
       "flex-layout.col#icizq3",
       "flex-layout.col#icder3"
-    ]
+    ],"props":{
+      "blockClass":"rowic",
+      "fullWidth":true
+    }
   },
   "flex-layout.col#icizq3":{
     "children":[
       "info-card#izq3"
-    ]
+    ],"props":{
+      "blockClass":"colic"
+    }
   },
   "flex-layout.col#icder3":{
     "children":[
       "info-card#der3"
-    ]
+    ],"props":{
+      "blockClass":"colic"
+    }
   },"info-card#izq3":{
     "props": {
       "isFullModeStyle": true,
       "textPosition": "left",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
-      "headline": "Descubre nuevas bicicletas",
-      "callToActionText": "Ver Bicicletas",
-      "subhead": "Bicicletas para todos",
-      "callToActionUrl": "/bicicletas",
+      "imageUrl": "assets/icbgizq3.jpeg",
+      "headline": "Descubre nueva colección",
+      "callToActionText": "Ver Novedades",
+      "subhead": "Todo lo nuevo",
+      "callToActionUrl": "/Novedades",
       "blockClass": "seccionic",
       "textAlignment": "left"
     }
@@ -172,11 +310,11 @@
     "props": {
       "isFullModeStyle": true,
       "textPosition": "left",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
-      "headline": "Descubre nuevas bicicletas",
-      "callToActionText": "Ver Bicicletas",
-      "subhead": "Bicicletas para todos",
-      "callToActionUrl": "/bicicletas",
+      "imageUrl": "assets/icbgder3.jpeg",
+      "headline": "Descubre últimas ofertas",
+      "callToActionText": "Ver Ofertas",
+      "subhead": "Super ofertas",
+      "callToActionUrl": "/Ofertas",
       "blockClass": "seccionic",
       "textAlignment": "left"
     }
@@ -193,10 +331,13 @@
   "flex-layout.col#titshelf":{
     "children":[
       "rich-text#tituloshelf"
-    ]
+    ],"props":{
+      "horizontalAlign":"center"
+    }
   },"rich-text#tituloshelf":{
     "props":{
-      "text": "OFERTAS REBAJAS"
+      "text": "## OFERTAS REBAJAS",
+      "blockClass": "offcont"
     }
   },
   //-------------------------- Final titulo contador -------------------------
@@ -204,15 +345,26 @@
   "flex-layout.col#contador":{
     "children":[
       "rich-text#contador"
-    ]
+    ],"props":{
+      "horizontalAlign":"center"
+    }
   },"rich-text#contador":{
     "props":{
-      "text":"FINALIZA EN: "
+      "text":"## FINALIZA EN: ",
+      "blockClass": "offcont"
     }
   },      
  //-------------------------- Final contador -------------------------
  //-------------------------- Inicio titulo lo mas vendido -------------------------
-  "rich-text#shelf-title": {
+ "flex-layout.row#titleshelf":{
+   "children":[
+    "rich-text#shelf-title"
+   ],"props":{
+     "horizontalAlign":"center"
+   }
+ },
+ 
+ "rich-text#shelf-title": {
     "props": {
       "text": "## LO MÁS VENDIDO",
       "blockClass": "shelfTitle"
@@ -223,7 +375,10 @@
 
 
   "flex-layout.row#shelf": {
-    "children": ["list-context.product-list#demo1"]
+    "children": ["list-context.product-list#demo1"],
+    "props":{
+      "fullWidth":true
+    }
   },
   "list-context.product-list#demo1": {
     "blocks": ["product-summary.shelf"],
@@ -263,7 +418,10 @@
   "flex-layout.row#shelf2":{
     "children":[
       "list-context.product-list#demo2"
-    ]
+    ],
+    "props":{
+      "fullWidth":true
+    }
   },
   "list-context.product-list#demo2": {
     "blocks": ["product-summary.shelf"],
@@ -289,28 +447,126 @@
   // ---------------------- Inicio Slider Conoce marcas -----------------------------
 
   "flex-layout.row#titconoce":{
+    "title":"RowTituloConoce",
+    "children":[
+      "flex-layout.col#titmarcas"      
+    ]
+  },"flex-layout.col#titmarcas":{
+    "title":"ColTituloConoce",
     "children":[
       "rich-text#titconoce"
-    ]
-  },"rich-text#titconoce":{
+    ],"props":{
+      "horizontalAlign":"center"
+    }
+  },
+  "rich-text#titconoce":{
+    "title":"TituloConoce",
     "props":{
-      "text":"## CONOCE NUESTRAS MARCAS"
+      "text":"## CONOCE NUESTRAS MARCAS",
+      "blockClass": "titconoce"
     }
   },
   
-  "flex-layout.row#slidermarcas":{
+  "flex-layout.row#marcas":{
     "children":[
+      "flex-layout.col#marcas"
+    ],"props":{
+      "fullWidth":true
+    }
+  },
 
+  "flex-layout.col#marcas":{
+    "children":[
+      "flex-layout.row#marcas1",
+      "flex-layout.row#marcas2"
     ]
   },
+  "flex-layout.row#marcas1":{
+    "children":[
+      "image#row11",
+      "image#row12",
+      "image#row13",
+      "image#row14",
+      "image#row15"
+    ],"props":{
+      "marginTop": 5
+    }
+  },
+  "image#row11":{
+    "props":{
+      "height":"37px",
+      "src":"assets/alubike.png"
+    }
+  },
+  "image#row12":{
+    "props":{
+      "height":"37px",
+      "src":"assets/shimano.png"
+    }
+  },
+  "image#row13":{
+    "props":{
+      "height":"37px",
+      "src":"assets/alubike.png"
+    }
+  },
+  "image#row14":{
+    "props":{
+      "height":"37px",
+      "src":"assets/finishline.png"
+    }
+  },
+  "image#row15":{
+    "props":{
+      "height":"37px",
+      "src":"assets/alubike.png"
+    }
+  },
+  
+  
+  "flex-layout.row#marcas2":{
+    "children":[
+      "image#row21",
+      "image#row22",
+      "image#row23",
+      "image#row24",
+      "image#row25"
+    ],"props":{
+      "marginTop": 7,
+      "marginBottom": 7
+    }
+  },
+  "image#row21":{
+    "props":{
+      "height":"37px",
+      "src":"assets/lazer.png"
+    }
+  },
+  "image#row22":{
+    "props":{
+      "height":"37px",
+      "src":"assets/wtb.png"
+    }
+  },
+  "image#row23":{
+    "props":{
+      "height":"37px",
+      "src":"assets/saiguan.jpeg"
+    }
+  },
+  "image#row24":{
+    "props":{
+      "height":"37px",
+      "src":"assets/veloci.png"
+    }
+  },
+  "image#row25":{
+    "props":{
+      "height":"37px",
+      "src":"assets/vittoria.jpeg"
+    }
+  }
   
 // ---------------------- Final Slider Conoce marcas -----------------------------
-// ---------------------- Inicio Motores de pago -----------------------------
-"flex-layout.row#metodospago":{
-  "children":[
 
-  ]
-}
-
-// ---------------------- Inicio Motores de pago -----------------------------
 }
