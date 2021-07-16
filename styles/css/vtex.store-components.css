@@ -327,3 +327,351 @@
 }
 
 /*--------------------- Final estilo Responsivo --------------------*/
+
+
+
+/* ------------ Elements of product page ------------ */
+:global(.vtex-store-components-3-x-productImagesThumb){
+  height: 210px !important;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--pricings){
+  justify-content: flex-start;
+}
+/* Geneal font-family LATO */
+:global(.vtex-store-components-3-x-container),
+:global(.vtex-reviews-and-ratings-2-x-container) {
+  font-family: Lato;
+}
+
+/* Brand name style */
+:global(.vtex-store-components-3-x-productBrandName--product-brandName) {
+  font-family: "Lato-Regular";
+  font-size: 14px;
+  color: #385dae;
+}
+
+/* Product name style. */
+:global(.vtex-flex-layout-0-x-flexRowContent--product-name)
+  :global(.vtex-store-components-3-x-productNameContainer--quickview) {
+  font-family: "Lato-Bold";
+  font-size: 30px;
+  color: #385dae;
+}
+
+/* -----------------  Model (product-identifier) style ----------------- */
+/* Deleting 'Reference' label */
+:global(.vtex-flex-layout-0-x-flexRowContent--Model)
+  :global(.vtex-product-identifier-0-x-product-identifier__label),
+:global(.vtex-product-identifier-0-x-product-identifier__separator) {
+  display: none;
+}
+/* Adding 'Modelo' label */
+:global(.vtex-flex-layout-0-x-flexRowContent--Model)
+  :global(.vtex-product-identifier-0-x-product-identifier__value)::before {
+  content: "Modelo ";
+  font-family: 'Lato-Regular';
+  color: #385dae;
+  font-size: 12px;
+}
+/* Full text style */
+:global(.vtex-flex-layout-0-x-flexRowContent--Model)
+  :global(.vtex-product-identifier-0-x-product-identifier__value) {
+  font-family: 'Lato-Regular';
+  color: #385dae;
+  font-size: 12px;
+  margin-bottom: 0%;
+}
+
+:global(.vtex-product-identifier-0-x-product-identifier--productReference){
+  margin-bottom: 0% !important;
+}
+
+
+/* ----------------- /Model (product-identifier) style ----------------- */
+
+/* Raiting stars style */
+:global(.vtex-flex-layout-0-x-flexRow--ratingStars)
+  :global(.vtex-reviews-and-ratings-2-x-star--filled),
+  :global(.vtex-reviews-and-ratings-2-x-star--empty){
+  color: #eb0045;
+  font-size: 1.2rem;
+}
+/* ---------------- Product description ----------------- */
+/* Delete title description */
+:global(.vtex-store-components-3-x-productDescriptionContainer)
+  :global(.vtex-store-components-3-x-productDescriptionTitle) {
+  display: none;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--descripcionProducto)
+  :global(.vtex-store-components-3-x-content) {
+  font-family: 'Lato-Regular';
+  font-size: 12px;
+  color: #242424;
+}
+/* --------------- /Product description ----------------- */
+
+/* --------------- Pricing labels --------------- */
+/* Selling price */
+:global(.vtex-flex-layout-0-x-flexRowContent--pricings)
+  :global(.vtex-product-price-1-x-currencyContainer--sellingPrice) {
+  font-size: 1.5rem;
+  color: #385dae;
+  font-family: 'Lato-Bold' !important;
+}
+
+/* Fail :c */
+/* :global(.vtex-flex-layout-0-x-flexRowContent--pricings)
+:global(.vtex-flex-layout-0-x-stretchChildrenWidth){
+  padding-bottom: 10px;
+  width: 100% !important;
+}
+ */
+/* List price */
+:global(.vtex-flex-layout-0-x-flexRowContent--pricings)
+  :global(.vtex-flex-layout-0-x-flexCol)
+  :global(.vtex-product-price-1-x-currencyContainer--listPrice) {
+  color: #a0a0a0;
+  font-size: 1.5rem;
+  position: relative;
+  top: 1px;
+  font-family: 'Lato-Regular';
+}
+
+/* -------------- /Pricing labels --------------- */
+/* -------------- Quantity (label and numeric component) -------------- */
+
+:global(.vtex-rich-text-0-x-container--quantityLabel)
+  :global(.vtex-rich-text-0-x-paragraph--quantityLabel) {
+  font: normal normal normal 14px/25px Lato;
+  letter-spacing: 0px;
+  color: #242424;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--quantityRow)
+  :global(.vtex-rich-text-0-x-paragraph--quantityLabel) {
+  padding-bottom: 11px;
+  font-family: 'Lato-Regular';
+  font-size: 14px;
+}
+
+/* Input style */
+:global(.vtex-product-quantity-1-x-quantitySelectorContainer--quantityComponent)
+  :global(.vtex-numeric-stepper__input) {
+  border: 0.4000000059604645px solid #c4c4c4;
+  border-radius: 10px;
+  color: #292929;
+  font-family: 'Lato-Regular';
+  width: 53px;
+  height: 22px;
+}
+
+/* Quantity buttons (- and +)  */
+:global(.vtex-product-quantity-1-x-quantitySelectorContainer--quantityComponent)
+  :global(.vtex-numeric-stepper__minus-button),
+:global(.vtex-numeric-stepper__plus-button) {
+  background: #385dae 0% 0% no-repeat padding-box;
+  border-radius: 10px !important;
+  width: 27px !important;
+  height: 22px !important;
+  /* font-size: 9px; */
+  font-weight: 4px;
+  color: #ffffff;
+}
+
+
+
+
+/* ------------- /Quantity (label and numeric component) -------------- */
+
+/* Add to cart button style */
+:global(.vtex-flex-layout-0-x-flexRow--rowAtCB) :global(.vtex-button) {
+  background: #eb0045 0% 0% no-repeat padding-box;
+  border-radius: 20px;
+  border: #eb0045;
+}
+
+/* Add to cart button_LABEL style */
+:global(.vtex-flex-layout-0-x-flexRow--rowAtCB)
+  :global(.vtex-add-to-cart-button-0-x-buttonText--AtC-Button) {
+  font: normal normal bold 16px/20px Lato;
+  color: #ffffff;
+  text-transform: none;
+}
+
+/* HighLight Envio Gratis */
+:global(.vtex-flex-layout-0-x-flexRowContent--rowHL)
+  :global(.vtex-product-highlights-2-x-productHighlightText) {
+  background: #385dae;
+  width: 178px;
+  height: 43px;
+  border-radius: 20px;
+  padding: 0px 0px 0px 0px !important;
+  font-family: 'Lato-BlackItalic';
+  font-size: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 45px;
+  text-align: center;
+
+  /* Shadow */
+  box-shadow: 4px 5px #EB0045;
+
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--rowHL)
+:global(.vtex-flex-layout-0-x-stretchChildrenWidth){
+  justify-content: left;
+}
+
+/* --------------- Share --------------- */
+/* Delete share title */
+:global(.vtex-store-components-3-x-shareContainer)
+  :global(.vtex-store-components-3-x-shareLabel) {
+  font-size: 1.5rem;
+  display: none;
+}
+
+/* --------------- Change icons of Facebook, Twitter and WhatsApp --------------- */
+:global(.vtex-store-components-3-x-shareSocialIcon):first-child{
+  display: none;
+}
+
+:global(.vtex-store-components-3-x-shareContainer)
+:global(.vtex-store-components-3-x-shareSocialButton):first-child::before {
+  content: ' ';
+  display:block;
+  height:19.14px;
+  width:19.14px;
+  background-size: 19.14px 19.14px;
+  background-image:url('assets/productAssets/iconFB.png');
+  background-repeat: no-repeat;
+}
+
+:global(.vtex-store-components-3-x-shareContainer)
+:global(.vtex-store-components-3-x-shareSocialButton):not(:first-child)::before{
+  content: ' ';
+  display:block;
+  height:19.14px;
+  width:19.14px;
+  background-size: 19.14px 19.14px;
+  background-image:url('assets/productAssets/iconTw.png');
+
+  background-repeat: no-repeat;
+}
+
+:global(.vtex-store-components-3-x-shareContainer)
+:global(.vtex-store-components-3-x-shareSocialButton):last-child::before {
+  content: ' ';
+  display:block;
+  height:19.14px;
+  width:19.14px;
+  background-size: 19.14px 19.14px;
+  background-image:url('assets/productAssets/iconWa.png');
+
+  background-repeat: no-repeat;
+}
+/* --------------- Change icons of Facebook, Twitter and WhatsApp --------------- */
+
+/* -------------- /Share --------------- */
+
+/* Secure site and cards */
+:global(.vtex-flex-layout-0-x-flexRow--rowSSandC)
+  :global(.vtex-flex-layout-0-x-flexCol--colSSWithText),
+:global(.vtex-flex-layout-0-x-flexCol--CWithText) {
+  align-items: center;
+}
+
+/* ------------ Accordion menu ------------ */
+:global(.vtex-store-components-3-x-productDescriptionText)
+  :global(.vtex-store-components-3-x-container)
+    :global(.vtex-store-components-3-x-content){
+  font-family: 'Lato-Regular';
+  font-size: 14px;
+  color: #292929;
+}
+
+:global(.vtex-menu-2-x-menuContainerNav--desc)
+:global(.vtex-menu-2-x-menuItem--isClosed) {
+  background: #0f2a65;
+}
+
+:global(.vtex-menu-2-x-menuContainerNav--desc)
+:global(.vtex-menu-2-x-menuItem--isOpen) {
+  background: #F8F8F8;
+}
+
+:global(.vtex-menu-2-x-accordionIcon--isClosed){
+  color: #ffffff;
+  font-size: 20px;
+}
+
+
+:global(.vtex-menu-2-x-menuContainerNav--desc)
+  :global(.vtex-menu-2-x-menuItem--description--isClosed) 
+  :global(.vtex-menu-2-x-styledLinkContent--description) {
+    color: #FFFFFF;
+    font-family: 'Lato-Bold';
+    font-size: 16px;
+  }
+
+:global(.vtex-menu-2-x-menuContainerNav--desc)
+  :global(.vtex-menu-2-x-menuItem--caracteristicas--isClosed) 
+  :global(.vtex-menu-2-x-styledLinkContent--caracteristicas) {
+    color: #FFFFFF;
+    font-family: 'Lato-Bold';
+    font-size: 16px;
+  }
+
+
+  :global(.vtex-menu-2-x-menuContainerNav--desc)
+  :global(.vtex-menu-2-x-menuItem--description--isOpen) 
+  :global(.vtex-menu-2-x-styledLinkContent--description) {
+    color: #292929;
+    font-family: 'Lato-Bold';
+    font-size: 16px;
+  }
+
+:global(.vtex-menu-2-x-menuContainerNav--desc)
+  :global(.vtex-menu-2-x-menuItem--caracteristicas--isOpen) 
+  :global(.vtex-menu-2-x-styledLinkContent--caracteristicas) {
+    color: #292929;
+    font-family: 'Lato-Bold';
+    font-size: 16px;
+  }
+
+
+:global(.vtex-menu-2-x-menuContainerNav--desc)
+  :global(.vtex-menu-2-x-styledLinkContent--description),
+:global(.vtex-menu-2-x-styledLinkContent--caracteristicas){
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  font: normal normal bold 16px/20px Lato;
+  justify-content: end;
+  text-transform: uppercase;
+}
+/* ----------- /Accordion menu ------------ */
+
+/* ---------------- Also can you interested ---------------- */
+/* Center title */
+:global(.vtex-flex-layout-0-x-flexRow--Interested)
+:global(.vtex-rich-text-0-x-container--ACYI){
+  justify-content: center;
+ 
+}
+
+/* Title style*/
+:global(.vtex-flex-layout-0-x-flexRow--Interested)
+:global(.vtex-rich-text-0-x-container--ACYI)
+:global(.vtex-rich-text-0-x-heading){
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Lato-BlackItalic';
+  font-size: 35px;
+  color: #0F2A65;
+}
+/* ---------------- Also can you interested ---------------- */
+
+/* ----------- /Some elements of product page ------------ */
