@@ -672,6 +672,330 @@
   font-size: 35px;
   color: #0F2A65;
 }
-/* ---------------- Also can you interested ---------------- */
+/* --------------- /Also can you interested ---------------- */
 
 /* ----------- /Some elements of product page ------------ */
+
+/* ----------- Some elements popup login ----------- */
+/* Align items center popup profile*/
+:global(.vtex-login-2-x-content--accountOptions){
+  text-align: center;
+}
+
+/* Header resinzing */
+:global(.vtex-login-2-x-content)
+:global(.vtex-login-2-x-formTitle) {
+  font-size: 17px;
+}
+
+/* Replace text button ACCEDER CON CÓDIGO DE ACCESSO */
+:global(.vtex-login-2-x-accessCodeOptionBtn)
+:global(.vtex-button)
+:global(.vtex-button__label){
+  display: none;
+}
+:global(.vtex-login-2-x-accessCodeOptionBtn)
+:global(.vtex-button)::after{
+  content: "ACCEDER CON CÓDIGO DE ACCESO";
+  text-transform: uppercase !important;
+  color: #0F2A65;
+  font-size: 17px !important;
+  font-family: 'Lato-Regular'!important;
+}
+
+/* Replace text button ENTRAR CON E-MAIL Y CONTRASEÑA */
+:global(.vtex-login-2-x-emailPasswordOptionBtn)
+:global(.vtex-button)
+:global(.vtex-button__label){
+  display: none;
+}
+:global(.vtex-login-2-x-emailPasswordOptionBtn)
+:global(.vtex-button)::after{
+  content: "ENTRAR CON E-MAIL Y CONTRASEÑA";
+  color: #0F2A65;
+  font-size: 17px !important;
+  font-family: 'Lato-Regular'!important;
+}
+
+/* Login buttons */
+:global(.vtex-login-2-x-options)
+:global(.vtex-login-2-x-button){
+  background-color: #EEF3F7;
+  border-radius: 3px;
+  border: 1px solid #EDEDED;
+}
+
+/* Login button labels */
+:global(.vtex-login-2-x-options)
+:global(.vtex-login-2-x-button)
+:global(.vtex-login-2-x-oauthLabel) {
+  color: #0F2A65;
+  font-size: 17px !important;
+}
+
+/* Clean bold font */
+:global(.vtex-login-2-x-options)
+:global(.vtex-login-2-x-button)
+:global(.vtex-login-2-x-oauthProvider) {
+  font-weight: lighter;
+}
+
+/* My Account button */
+:global(.vtex-login-2-x-content--accountOptions)
+:global(.vtex-login-2-x-accountOptions)
+:global(.vtex-login-2-x-button) {
+  color: #0F2A65;
+  width: 318px;
+  height: 43px;
+  font-size: 0.875rem;
+  font-family: 'Lato-Regular';
+}
+
+/* Send and confirm button */
+:global(.vtex-login-2-x-content--emailVerification)
+:global(.vtex-login-2-x-sendButton)
+:global(.vtex-button),
+:global(.vtex-login-2-x-codeConfirmation)
+:global(.vtex-login-2-x-sendButton)
+:global(.vtex-button) {
+  border-radius: 20px;
+  background-color: #5784BA;
+  border-color: #5784BA;
+}
+
+/* Visible and invisible password icon */
+:global(.vtex-login-2-x-inputContainerPassword)
+:global(.vtex-login-2-x-eyeIcon--invisible),
+:global(.vtex-login-2-x-inputContainerPassword)
+:global(.vtex-login-2-x-eyeIcon--visible) {
+  color: #EB0045;
+}
+
+/* Forgot my password and Register label */
+:global(.vtex-login-2-x-emailAndPasswordForm)
+:global(.vtex-login-2-x-formLinkContainer)
+:global(.vtex-login-2-x-forgotPasswordLink), 
+:global(.vtex-login-2-x-emailAndPasswordForm)
+:global(.vtex-login-2-x-formLinkContainer)
+:global(.vtex-login-2-x-dontHaveAccount) {
+  color: #FFFFFF;
+  font-size: 14px;
+  font-family: 'Lato-italic';
+}
+
+/* Border top footer Login with email and ps */
+:global(.vtex-login-2-x-emailAndPasswordForm)
+:global(.vtex-login-2-x-formFooter) {
+  border-top: 1px solid #EB0045;
+}
+
+/* ENTRAR button */
+:global(.vtex-login-2-x-emailAndPasswordForm)
+:global(.vtex-login-2-x-sendButton)
+:global(.vtex-button) {
+  width: 90px;
+  height: 17px !important;
+  background-color: #EB0045;
+  border-color: #EB0045;
+  border-radius: 10px;
+  }
+
+/* ---------- /Some elements popup login ----------- */
+/* ----------- Some elements of profile page  ----------- */
+
+/* Navbar active/visited color */
+:global(.vtex-my-account-1-x-menuLinks) 
+:global(.vtex-account_menu-link):visited {
+  border-color: #EB0045 !important;
+}
+:global(.vtex-my-account-1-x-boxContainer){
+  background-color:  #F8F8F8;
+  border-color: transparent;
+  border-radius: 20px;
+}
+
+/* Edit and password button label style */
+:global(.vtex-my-account-1-x-passwordBoxContainer)
+:global(.vtex-my-account-1-x-boxContainerFooter)
+:global(.vtex-button__label ), 
+:global(.vtex-my-account-1-x-profileBoxContainer)
+:global(.vtex-my-account-1-x-boxContainerFooter)
+:global(.vtex-button__label ){
+  font-family: 'Lato-italic';
+  color: #0F2A65;
+  text-transform: initial;
+}
+
+/* Justify password button label LEFT */
+:global(.vtex-my-account-1-x-passwordBoxContainer)
+:global(.vtex-my-account-1-x-boxContainerFooter) {
+  justify-content: left;
+}
+
+/* Check box Profile tab */
+:global(.vtex-my-account-1-x-passwordBox)
+:global(.vtex-checkbox__inner-container){
+  border-radius: 30px;
+}
+:global(.vtex-my-account-1-x-passwordBox)
+:global(.vtex-checkbox__inner-container):visited  {
+  background-color: #EB0045;
+}
+
+/* Button label add Addres */
+:global(.vtex-my-account-1-x-addressCreate)
+:global(.vtex-dropdown__button), :global(.vtex-address-form-4-x-input) {
+  font-size: 0.75rem !important;
+  font-family: 'Lato-Regular';
+  color: #292929;
+}
+
+/* Button label add Addres */
+:global(.vtex-my-account-1-x-addressCreate)
+:global(.vtex-dropdown__label), :global(.vtex-input__label) {
+  font-size: 1.25rem;
+  font-family: 'Lato-Regular';
+  color: #292929;
+}
+
+/* Button background color */
+:global(.vtex-my-account-1-x-addressCreate)
+:global(.vtex-button) {
+  background: #0F2A65 0% 0% no-repeat padding-box;
+  border-color: #0F2A65;
+  border-radius: 20px;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+/* Button label add address  */
+:global(.vtex-my-account-1-x-addressCreate)
+:global(.vtex-button__label) {
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-family: 'Lato-Regular';
+  text-transform: capitalize;
+}
+
+/* Background color credit card */
+:global(.vtex-account__create-card) {
+  background-color: #F8F8F8;
+  border-radius: 20px;
+}
+
+/* Button from headers */
+:global(.vtex-pageHeader__container)
+:global(.vtex-button) {
+  border-radius: 20px;
+  background-color: #0F2A65;
+  border-color: #0F2A65;
+}
+:global(.vtex-pageHeader__container)
+:global(.vtex-button)
+:global(.vtex-button__label){
+  text-transform: capitalize;
+  font-family: 'Lato-Regular';
+  font-size: 20px;
+}
+
+/* Header back button */
+:global(.vtex-pageHeader-link__container)
+:global(.vtex-button) {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+/* Header back button  arrow */
+:global(.vtex-pageHeader-link__container)
+:global(.vtex-button) 
+:global(.vtex__icon-arrow-back) {
+  color: #0F2A65;
+}
+
+/* ---------- /Some elements of profile page  ----------- */
+
+/* ---------- Some elements of mini cart ---------- */
+
+/* Close icon */
+:global(.vtex-minicart-2-x-closeIconContainer)
+:global(.vtex-minicart-2-x-closeIconButton)
+:global(.vtex-minicart-2-x-closeIcon) {
+  background-color: #EB0045;
+  border-radius: 20px;
+  color: #FFFFFF;
+}
+
+/* Mini card CARRITO header */
+:global(.vtex-minicart-2-x-minicartContentContainer)
+:global(.vtex-minicart-2-x-minicartTitle) {
+  font-family: 'Lato-Regular';
+  text-transform: uppercase;
+}
+
+/* Hidde brand name */
+:global(.vtex-minicart-2-x-minicartProductListContainer )
+:global(.vtex-product-list-0-x-productBrandName){
+  display: none;
+}
+
+/* Product name */
+:global(.vtex-product-list-0-x-productName) {
+  color: #252525;
+  font-size: 0.75rem;
+  font-family: 'Lato-Regular';
+}
+
+/* Replace delete icon */
+:global(.vtex-flex-layout-0-x-flexRowContent)
+:global(.vtex-product-list-0-x-removeButton)
+:global(.vtex-product-list-0-x-deleteIcon) {
+  display: none;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent)
+:global(.vtex-product-list-0-x-removeButton)::after {
+  content: url(assets/trashIcon.svg);
+}
+
+/* Dropdown counter style */
+:global(.vtex-flex-layout-0-x-flexRowContent)
+:global(.vtex-product-list-0-x-quantityDropdownContainer)
+:global(.vtex-styleguide-9-x-container) { 
+  border-radius: 0px;
+  border-color: #EB0045;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent)
+:global(.vtex-product-list-0-x-quantityDropdownContainer)
+:global(.vtex-dropdown__arrow) {
+  color: #EB0045;
+}
+
+/* Close purchase button */
+:global(.vtex-flex-layout-0-x-flexRowContent--minicart-footer)
+:global(.vtex-button) {
+  border-radius: 20px;
+  background-color: #EB0045;
+  border-color: #EB0045;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+/* Replace close purchase label button */
+:global(.vtex-minicart-2-x-minicartCheckoutButton)
+:global(.vtex-button)
+:global(.vtex-button__label) {
+  font-size: 0px;
+}
+:global(.vtex-minicart-2-x-minicartCheckoutButton)
+:global(.vtex-button)
+:global(.vtex-button__label)::before {
+  font-size: 1rem;
+  font-family: 'Lato-Regular';
+  content: "FINALIZAR COMPRA";
+}
+
+/* Divider footer */
+:global(.vtex-flex-layout-0-x-flexRowContent--minicart-footer) {
+  border-top: 1px solid #EB0045;
+}
+
+/* ---------- Some elements of mini cart ---------- */
