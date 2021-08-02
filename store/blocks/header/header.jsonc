@@ -238,8 +238,8 @@
 
   "image#corazonmob":{
     "props":{
-      "height":"17px",
-      "src":"assets/wishlist.png",
+      "height":"22px",
+      "src":"assets/heart22px.png",
       "link":{
         "url":"https://bicimundomx.myvtex.com/account#/wishlist"      
       },
@@ -247,7 +247,10 @@
     }
   },
   "drawer": {
-    "children": ["menu#drawer"]
+    "children": ["menu#drawer"],
+    "props":{
+      "isFullWidth":true
+    }
   },
 
   "menu#drawer": {
@@ -270,7 +273,7 @@
       "title": "Logo",
       "href": "/",
       "url": "assets/logo-bicimundo.png",
-      "width": "89"
+      "width": "140"
     }
   },
 

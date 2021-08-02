@@ -57,6 +57,7 @@
   ]
 },
 "list-context.image-list#marcas": {
+  "title":"ListContent Marcas Mob.",
   "children": ["slider-layout#marcas"],
   "props": {
     "images": [
@@ -88,6 +89,7 @@
   }
 },
 "slider-layout#marcas": {
+  "title":"Slider Layout Marcas Mobile",
   "props": {
     "blockClass":"carrumarcas",
     "itemsPerPage": {
@@ -136,6 +138,7 @@
 
 
   "list-context.image-list#demo": {
+    "title":"Slider Principal",
     "children": ["slider-layout#demo-images"],
     "props": {
       "height": 720,
@@ -152,6 +155,7 @@
     }
   },
   "slider-layout#demo-images": {
+    "title":"Slider Layout Principal",
     "props": {
       "itemsPerPage": {
         "desktop": 1,
@@ -191,6 +195,7 @@
       "blockClass":"colic"
     }
   },"info-card#izq1":{
+    "title":"Infocard Izquierda 1",
     "props": {
       "isFullModeStyle": true,
       "textPosition": "left",
@@ -204,6 +209,7 @@
     }
   },
   "info-card#der1":{
+    "title":"Infocard derecha 1",
     "props": {
       "isFullModeStyle": true,
       "textPosition": "left",
@@ -230,6 +236,7 @@
     }
   },
   "flex-layout.col#icizq2":{
+    "title":"Col IC izq 2",
     "children":[
       "info-card#izq2"
     ],"props":{
@@ -237,12 +244,14 @@
     }
   },
   "flex-layout.col#icder2":{
+    "title":"Col IC der 2",
     "children":[
       "info-card#der2"
     ],"props":{
       "blockClass":"colic"
     }
   },"info-card#izq2":{
+    "title":"Infocard Izquierda 2",
     "props": {
       "isFullModeStyle": true,
       "textPosition": "left",
@@ -256,6 +265,7 @@
     }
   },
   "info-card#der2":{
+    "title":"Infocard derecha 2",
     "props": {
       "isFullModeStyle": true,
       "textPosition": "left",
@@ -272,6 +282,7 @@
 //--------------------- Inicio Renglon IC 3-------------------------------
 
   "flex-layout.row#infocards3":{
+    "title":"Row Info-cards 3",
     "children":[
       "flex-layout.col#icizq3",
       "flex-layout.col#icder3"
@@ -281,6 +292,7 @@
     }
   },
   "flex-layout.col#icizq3":{
+    "title":"Col IC izq 3",
     "children":[
       "info-card#izq3"
     ],"props":{
@@ -288,12 +300,14 @@
     }
   },
   "flex-layout.col#icder3":{
+    "title":"Col IC der 3",
     "children":[
       "info-card#der3"
     ],"props":{
       "blockClass":"colic"
     }
   },"info-card#izq3":{
+    "title":"Infocard Izquierda 3",
     "props": {
       "isFullModeStyle": true,
       "textPosition": "left",
@@ -307,6 +321,7 @@
     }
   },
   "info-card#der3":{
+    "title":"Infocard derecha 3",
     "props": {
       "isFullModeStyle": true,
       "textPosition": "left",
@@ -323,18 +338,21 @@
   //--------------------- Final Renglon IC 3 -------------------------------
 //-------------------------- Inicio titulo contador -------------------------
   "flex-layout.row#title-contador":{
+    "title":"Row Titulo-Contador",
     "children":[
       "flex-layout.col#titshelf",
       "flex-layout.col#contador"
     ]
   },
   "flex-layout.col#titshelf":{
+    "title":"Col Titulo-Contador",
     "children":[
       "rich-text#tituloshelf"
     ],"props":{
       "horizontalAlign":"center"
     }
   },"rich-text#tituloshelf":{
+    "title":"Texto Ofertas",
     "props":{
       "text": "## OFERTAS REBAJAS",
       "blockClass": "offcont"
@@ -343,12 +361,14 @@
   //-------------------------- Final titulo contador -------------------------
   //-------------------------- Inicio contador -------------------------
   "flex-layout.col#contador":{
+    "title":"Col Contador",
     "children":[
       "rich-text#contador"
     ],"props":{
       "horizontalAlign":"center"
     }
   },"rich-text#contador":{
+    "title":"Texto Contador",
     "props":{
       "text":"## FINALIZA EN: ",
       "blockClass": "offcont"
@@ -357,6 +377,7 @@
  //-------------------------- Final contador -------------------------
  //-------------------------- Inicio titulo lo mas vendido -------------------------
  "flex-layout.row#titleshelf":{
+   "title":"Row Más Vendido",
    "children":[
     "rich-text#shelf-title"
    ],"props":{
@@ -365,6 +386,7 @@
  },
  
  "rich-text#shelf-title": {
+   "title":"Texto Más Vendido",
     "props": {
       "text": "## LO MÁS VENDIDO",
       "blockClass": "shelfTitle"
@@ -375,12 +397,16 @@
 
 
   "flex-layout.row#shelf": {
-    "children": ["list-context.product-list#demo1"],
+    "title":"Carrusel Lo más Vendido",
+    "children": [
+      "list-context.product-list#demo1"
+    ],
     "props":{
       "fullWidth":true
     }
   },
   "list-context.product-list#demo1": {
+    "title":"List Content Lo Más Vendido",
     "blocks": ["product-summary.shelf"],
     "children": ["slider-layout#demo-products"],
     "props": {
@@ -388,6 +414,7 @@
     }
   },
   "slider-layout#demo-products": {
+    "title":"Slider-Layout Lo Más Vendido",
     "props": {
       "itemsPerPage": {
         "desktop": 5,
@@ -395,7 +422,7 @@
         "phone": 1
       },
       "infinite": true,
-      "fullWidth": false,
+      "fullWidth": true,
       "blockClass": "shelf"
     }
   },
@@ -416,6 +443,7 @@
 
 // ---------------------- Inicio Shelf ofertas-rebajas -----------------------------
   "flex-layout.row#shelf2":{
+    "title":"Row Ofertas",
     "children":[
       "list-context.product-list#demo2"
     ],
@@ -424,6 +452,7 @@
     }
   },
   "list-context.product-list#demo2": {
+    "title":"List Content Carrusel Ofertas",
     "blocks": ["product-summary.shelf"],
     "children": ["slider-layout#demo-products2"],
     "props": {
@@ -431,6 +460,7 @@
     }
   },
   "slider-layout#demo-products2": {
+    "title":"Slider-layout Carrusel Ofertas",
     "props": {
       "itemsPerPage": {
         "desktop": 5,
@@ -468,6 +498,7 @@
   },
   
   "flex-layout.row#marcas":{
+    "title":"Row título Marcas",
     "children":[
       "flex-layout.col#marcas"
     ],"props":{
@@ -476,12 +507,14 @@
   },
 
   "flex-layout.col#marcas":{
+    "title":"Col título Marcas",
     "children":[
       "flex-layout.row#marcas1",
       "flex-layout.row#marcas2"
     ]
   },
   "flex-layout.row#marcas1":{
+    "title":"Row1 Imagenes Marcas",
     "children":[
       "image#row11",
       "image#row12",
@@ -493,30 +526,35 @@
     }
   },
   "image#row11":{
+    "title":"Imagen 1",
     "props":{
       "height":"37px",
       "src":"assets/alubike.png"
     }
   },
   "image#row12":{
+    "title":"Imagen 2",
     "props":{
       "height":"37px",
       "src":"assets/shimano.png"
     }
   },
   "image#row13":{
+    "title":"Imagen 3",
     "props":{
       "height":"37px",
       "src":"assets/alubike.png"
     }
   },
   "image#row14":{
+    "title":"Imagen 4",
     "props":{
       "height":"37px",
       "src":"assets/finishline.png"
     }
   },
   "image#row15":{
+    "title":"Imagen 5",
     "props":{
       "height":"37px",
       "src":"assets/alubike.png"
@@ -525,6 +563,7 @@
   
   
   "flex-layout.row#marcas2":{
+    "title":"Row2 Imagen Marcas",
     "children":[
       "image#row21",
       "image#row22",
@@ -537,30 +576,35 @@
     }
   },
   "image#row21":{
+    "title":"Imagen 21",
     "props":{
       "height":"37px",
       "src":"assets/lazer.png"
     }
   },
   "image#row22":{
+    "title":"Imagen 22",
     "props":{
       "height":"37px",
       "src":"assets/wtb.png"
     }
   },
   "image#row23":{
+    "title":"Imagen 23",
     "props":{
       "height":"37px",
       "src":"assets/saiguan.jpeg"
     }
   },
   "image#row24":{
+    "title":"Imagen 24",
     "props":{
       "height":"37px",
       "src":"assets/veloci.png"
     }
   },
   "image#row25":{
+    "title":"Imagen 25",
     "props":{
       "height":"37px",
       "src":"assets/vittoria.jpeg"

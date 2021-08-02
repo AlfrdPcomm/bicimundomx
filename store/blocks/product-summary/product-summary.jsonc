@@ -104,11 +104,12 @@
     }
   },
   "product-summary-sku-selector":{
-    "props":{
-      "showVariationsLabels": ["false"],
-      "showValueForVariation": "image",
-      "thumbnailImage": "imgsku"
+      "props": {
+        "visibility":"always",
+        "hideImpossibleCombinations": false,
+        "showValueForVariation":"image",
+        "showVariationsLabels":"none",
+        "thumbnailImage":["skuimg"]
+      }
     }
-    
-  }
 }

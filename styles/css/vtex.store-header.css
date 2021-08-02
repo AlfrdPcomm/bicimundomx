@@ -174,7 +174,7 @@
   :global(.vtex-login-2-x-container)
   :global(.vtex-button)
     :global(.vtex-button__label)::before{
-      content:url(assets/loginmob.png);
+      content:url(assets/usr22px.png);
       padding-top: 4px;
 }
 
@@ -183,7 +183,7 @@
 :global(.vtex-minicart-2-x-openIconContainer)
   :global(.vtex-button)
     :global(.vtex-button__label)::before{
-      content: url(assets/cartmob.png);
+      content: url(assets/cart22px.png);
      
     }
 
@@ -214,6 +214,9 @@
     border-radius: 10px;
   }
 
+  :global(.vtex-store-components-3-x-searchBarContainer){
+    width: 95% !important;
+  }
   
 
   :global(.vtex-store-components-3-x-notificationContent):first-child{
@@ -222,9 +225,6 @@
 
   :global(.vtex-store-drawer-0-x-opened){
     background-color: #0F2A65;
-    height: 50%;
-    max-width: 50%;
-    min-width: 50%;
   }
   
   :global(.vtex-store-drawer-0-x-closeIcon),
@@ -279,6 +279,11 @@
   font-family: 'Lato-Regular';
   font-size: 14px;
   text-transform: uppercase;
+}
+
+
+:global(.vtex-minicart-2-x-minicartQuantityBadgeDefault){
+  top: -1.2rem;
 }
 
 /*------------------ Final estilo desktop ---------------------------*/

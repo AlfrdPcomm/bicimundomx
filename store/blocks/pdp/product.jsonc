@@ -85,6 +85,7 @@
       "blockClass":"thumbproduct",
       "thumbnailsOrientation":"horizontal",
       "thumbnailMaxHeight": 210,
+      "hiddenImages":["skuimg"],
       "maxHeight":390,
       "aspectRatio": {
         "desktop": "auto",
@@ -212,12 +213,16 @@
       "sku-selector"
     ]
   },
-  "sku-selector": {
-    "props": {
+
+  "sku-selector":{
+    "props":{
       "variationsSpacing": 3,
-      "showValueNameForImageVariation": true
+      "showValueNameForImageVariation": false,
+      "thumbnailImage": ["skuimg"]
     }
   },
+  
+
 /* ---------- /SKU Selector ------------ */
   
   /* ------------------ Quantity ------------------  */
