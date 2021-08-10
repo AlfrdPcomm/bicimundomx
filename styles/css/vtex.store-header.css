@@ -171,10 +171,16 @@
 }
 
 @media (max-width: 1024px){
+
+  :global(.vtex-store-components-3-x-searchBarIcon--search)::before{
+    content: url(assets/headresp/searchmob.svg);
+    
+ }
+
   :global(.vtex-login-2-x-container)
   :global(.vtex-button)
     :global(.vtex-button__label)::before{
-      content:url(assets/usr22px.png);
+      content:url(assets/headresp/usermob.svg);
       padding-top: 4px;
 }
 
@@ -183,7 +189,7 @@
 :global(.vtex-minicart-2-x-openIconContainer)
   :global(.vtex-button)
     :global(.vtex-button__label)::before{
-      content: url(assets/cart22px.png);
+      content: url(assets/headresp/carritomob.svg);
      
     }
 
@@ -262,7 +268,12 @@
   font-family: 'Lato-Italic';
   color: #A0A0A0;
 }
-
+:global(.vtex-store-components-3-x-newsletter)
+  :global(.vtex-styleguide-9-x-input)::-webkit-input-placeholder{
+    font-size: 14px !important;    
+    font-family: 'Lato-Italic';
+    color: #A0A0A0;
+}
 
 :global(.vtex-stack-layout-0-x-stackItem--btnwish){
   left: 75%;
@@ -283,8 +294,14 @@
 
 
 :global(.vtex-minicart-2-x-minicartQuantityBadgeDefault){
-  top: -1.2rem;
+  top: -1.4rem;
+  background-color: #EB0045;
 }
 
 /*------------------ Final estilo desktop ---------------------------*/
-
+:global(.vtex-login-2-x-facebookOptionBtn)
+  :global(.vtex-button),
+:global(.vtex-login-2-x-googleOptionBtn)
+  :global(.vtex-button){
+    background-color: #ffffff;
+}

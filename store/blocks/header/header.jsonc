@@ -239,7 +239,7 @@
   "image#corazonmob":{
     "props":{
       "height":"22px",
-      "src":"assets/heart22px.png",
+      "src":"assets/headresp/wishmob.svg",
       "link":{
         "url":"https://bicimundomx.myvtex.com/account#/wishlist"      
       },
@@ -249,7 +249,7 @@
   "drawer": {
     "children": ["menu#drawer"],
     "props":{
-      "isFullWidth":true
+      "isFullWidth":false
     }
   },
 
@@ -272,7 +272,7 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "assets/logo-bicimundo.png",
+      "url": "assets/headresp/bmlogomob.svg",
       "width": "140"
     }
   },
@@ -281,10 +281,34 @@
     "blocks": ["autocomplete-result-list.v2"],
     "props": {
       "openAutocompleteOnFocus": true,
-      "placeholder": "Buscar bicicletas, partes herramientas, etc."
+      "placeholder": "Buscar bicicletas, partes herramientas, etc.",
+      "autocompleteAlignment":"center"
+      
     }
   },"autocomplete-result-list.v2": {
-    "blocks": ["product-summary.shelf"]
+    "blocks": ["product-summary.shelf#srch"],
+    "props":{
+      "autocompleteWidth": 60,
+      "simulationBehavior":"default"
+    }
+  },
+
+  "product-summary.shelf#srch": {
+    "children": [
+      "stack-layout#srch",
+      "product-summary-brand",
+      "product-summary-name",
+      "flex-layout.col#productRating",
+      "product-summary-space",      
+      "flex-layout.row#selling-price-savings",
+      "add-to-cart-button"
+    ]
+  },
+  "stack-layout#srch":{
+    "children":[
+      "product-summary-image#shelf",
+      "vtex.product-highlights@2.x:product-highlights#collection"
+    ]
   },
 
   "flex-layout.row#2-mobile":{

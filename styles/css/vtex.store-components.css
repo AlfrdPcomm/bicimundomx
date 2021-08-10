@@ -272,6 +272,20 @@
 /*--------------------- Inicio estilo Responsivo --------------------*/
 @media (max-width: 640px){
 
+  :global(.vtex-flex-layout-0-x-flexCol--descfeaturess){
+    padding-left: 0px;
+  }
+
+  :global(.vtex-store-components-3-x-caretIcon--thumbproduct){
+    display: none;
+  }
+
+  :global(.vtex-styleguide-9-x-input){
+    padding-top: 8px;
+    font-size: 14px!important;
+  }
+
+
   :global(.vtex-rich-text-0-x-wrapper--titconoce){
       text-align: center !important;
       
@@ -542,10 +556,10 @@
 :global(.vtex-store-components-3-x-shareSocialButton):first-child::before {
   content: ' ';
   display:block;
-  height:19.14px;
-  width:19.14px;
-  background-size: 19.14px 19.14px;
-  background-image:url('assets/productAssets/iconFB.png');
+  height:19px;
+  width:19px;
+  background-size: 19px 19px;
+  background-image:url('assets/productAssets/fbprod.svg');
   background-repeat: no-repeat;
 }
 
@@ -755,6 +769,9 @@
 }
 
 /* Send and confirm button */
+:global(.vtex-login-2-x-formFooter)
+  :global(.vtex-login-2-x-sendButton)
+    :global(.vtex-button),
 :global(.vtex-login-2-x-content--emailVerification)
 :global(.vtex-login-2-x-sendButton)
 :global(.vtex-button),
@@ -762,8 +779,8 @@
 :global(.vtex-login-2-x-sendButton)
 :global(.vtex-button) {
   border-radius: 20px;
-  background-color: #5784BA;
-  border-color: #5784BA;
+  background-color: #EB0045;
+  border-color: #EB0045;
 }
   
 
@@ -801,7 +818,7 @@
   height: 14px !important;
   background-color: #EB0045;
   border-color: #EB0045;
-  border-radius: 10px;
+  border-radius: 25px;
   }
 
 /* ---------- /Some elements popup login ----------- */
@@ -961,12 +978,19 @@
 }
 
 /* Dropdown counter style */
+
+
+:global(.vtex-product-list-0-x-quantityDropdownMobileContainer)
+:global(.vtex-styleguide-9-x-container),
 :global(.vtex-flex-layout-0-x-flexRowContent)
 :global(.vtex-product-list-0-x-quantityDropdownContainer)
 :global(.vtex-styleguide-9-x-container) { 
   border-radius: 0px;
   border-color: #EB0045;
 }
+
+:global(.vtex-product-list-0-x-quantityDropdownMobileContainer)
+:global(.vtex-dropdown__arrow),
 :global(.vtex-flex-layout-0-x-flexRowContent)
 :global(.vtex-product-list-0-x-quantityDropdownContainer)
 :global(.vtex-dropdown__arrow) {
@@ -1006,5 +1030,112 @@
 }
 
 /* ---------- Some elements of mini cart ---------- */
+:global(.vtex-search-1-x-tileListItem){
+  padding: 10px;
+}
+
+:global(.vtex-store-components-3-x-backToTopButtonContainer)
+  :global(.vtex-button){
+    background-color: rgb(15, 42, 101);
+    border:1px solid rgb(15, 42, 101)
+}
 
 
+:global(.vtex-store-components-3-x-backToTopButtonContainer)
+  :global(.vtex-button)
+    :global(.vtex-button__label){
+      color: #EB0045;
+    }
+
+
+:global(.vtex-store-components-3-x-productBrandName--summaryListMobile),
+:global(.vtex-product-price-1-x-savings--summary),
+:global(.vtex-product-price-1-x-savingsPercentage--summaryPercentage),
+:global(.vtex-store-components-3-x-productBrandName--summaryListDesktop){
+  font-family: 'Lato-Regular';
+  font-size: 14px;
+}
+
+:global(.vtex-product-price-1-x-savingsPercentage--summaryPercentage){
+  background-color: #385DAE;
+  border-radius: 25px;
+}
+
+:global(.vtex-product-price-1-x-savings--summary){
+  background-color: #38AE58;
+}
+  
+:global(.vtex-product-price-1-x-currencyContainer--summary){
+  padding-left: 5px;
+}
+
+
+:global(.vtex-flex-layout-0-x-flexRowContent--buyNowButton)
+  :global(.vtex-button)
+    :global(.vtex-button__label){
+       color: #ffffff;
+       background-color: #A0A0A0;
+       border-radius: 25px;
+       font-family: 'Lato-Bold';
+}
+
+:global(.vtex-checkbox__label){
+  line-height: 1.2;
+}
+
+
+:global(.vtex-store-components-3-x-swiperBullet){
+  opacity: 1 ;
+  background: #EB0045 ;
+}
+
+:global(.vtex-store-components-3-x-swiperBullet--active){
+  background: #385DAE;
+}
+
+
+:global(.vtex-menu-2-x-styledLinkContainer--caracteristicas)
+  :global(.vtex-menu-2-x-accordionIcon--caracteristicas--isOpen),
+:global(.vtex-menu-2-x-styledLinkContainer--description)
+  :global(.vtex-menu-2-x-accordionIcon--description--isOpen){
+    content: url(assets/minus.png);
+  }
+
+:global(.vtex-reviews-and-ratings-2-x-reviewsHeading){
+  padding-top: 50px;
+  font-size: 0%;
+}
+
+:global(.vtex-reviews-and-ratings-2-x-reviewsHeading)::before{
+  content: "RESEÑAS Y COMENTARIOS";
+  font-family: 'Lato-Bold';
+  font-size: 16px;
+}
+
+:global(.vtex-reviews-and-ratings-2-x-loginLink),
+:global(.vtex-reviews-and-ratings-2-x-reviewsRatingCount),
+:global(.vtex-reviews-and-ratings-2-x-reviewsRatingAverage){
+  font-family: 'Lato-Regular';
+  font-size: 14px;
+}
+
+:global(.vtex-reviews-and-ratings-2-x-reviewCommentUser){
+  font-family: 'Lato-Bold';
+  font-size: 14px;
+}
+
+
+:global(.vtex-reviews-and-ratings-2-x-star--filled),
+:global(.vtex-reviews-and-ratings-2-x-star--empty){
+  font-size: 24px;
+}
+
+:global(.vtex-shelf-1-x-slide){
+  padding: 5px;
+}
+
+:global(.vtex-my-account-1-x-boxContainerFooter)
+  :global(.vtex-button)
+    :global(.vtex-button__label){
+      color: #0F2A65;
+    }

@@ -85,9 +85,6 @@
   }
 
 
-  @media (max-width:640px){
-    
-  }
 /*-------------- Final personalización de footer ---------------------------*/
 
 :global(.vtex-store-footer-2-x-footerLayout) {
@@ -246,6 +243,10 @@
 }
 
 @media screen and (min-width: 80rem) {
+  :global(.vtex-flex-layout-0-x-flexRow--deals){
+    padding-left: 20%;
+    padding-right: 20%;
+  }
   :global(.vtex-rich-text-0-x-wrapper--texts) {
     line-height: 1;
     text-align: center;
@@ -441,7 +442,7 @@
   }
 
 
-@media (max-width: 1025px) {
+@media (max-width: 1024px) {
   :global(.vtex-store-components-3-x-container--newsletter){
     padding-right: 40px !important;
   }
@@ -917,7 +918,7 @@
   }
 
   :global(.vtex-styleguide-9-x-hideDecorators)::placeholder{
-    font-size: 10px !important;
+    font-size: 14px !important;
   }
 
   :global(.vtex-flex-layout-0-x-flexRowContent--border){
@@ -925,7 +926,7 @@
   }
 
   :global(.vtex-styleguide-9-x-hideDecorators){
-    font-size: 10px !important;
+    font-size: 14px !important;
   }
 
   :global(.vtex-flex-layout-0-x-flexRow--logosHomeContainerMobile){

@@ -5,16 +5,32 @@
       "condition-layout.product#availability",
       // "flex-layout.row#specifications-title",
       "flex-layout.row#descple",
-      "product-specification-group#table",
-      "shelf.relatedProducts",
-      "product-reviews",
+      "product-specification-group#table",      
+      "flex-layout.row#revs",
       "flex-layout.row#alsoCanYouInterested",
-      "flex-layout.row#shelf"
+      "flex-layout.row#relprod",
+      "back-to-top-button"
     ]
+  },
+
+  "flex-layout.row#revs":{
+    "children":[
+      "product-reviews"
+    ],"props":{
+      "blockClass":"margen"
+    }
+  },
+  "flex-layout.row#relprod":{
+    "children":[
+      "shelf.relatedProducts"
+    ],"props":{
+      "blockClass":"margen"
+    }
   },
   "flex-layout.row#product-breadcrumb": {
     "props": {
-      "marginTop": 4
+      "marginTop": 4,
+      "blockClass":"margen"
     },
     "children": ["breadcrumb"]
   },
@@ -22,7 +38,7 @@
   "flex-layout.row#description": {
     "props": {
       /* "marginBottom": 7, */
-      "blockClass": "descripcionProducto"
+      "blockClass": ["descripcionProducto","margen"]
     },
     "children": ["product-description"]
   },
@@ -45,7 +61,8 @@
       "marginTop": 4,
       "marginBottom": 7,
       "paddingTop": 7,
-      "paddingBottom": 7
+      "paddingBottom": 7,
+      "blockClass":"margen"
     },
     "children": ["flex-layout.col#stack", "flex-layout.col#right-col"]
   },
@@ -408,7 +425,10 @@
   /* ---------------- /Secure site and Cards ---------------- */
   /* ---------------- Description and features menu ---------------- */
   "flex-layout.row#descple": {
-    "children": ["vtex.menu@2.x:menu#dc"]
+    "children": ["vtex.menu@2.x:menu#dc"],
+    "props":{
+      "blockClass":"margen"
+    }
   },
 
   "vtex.menu@2.x:menu#dc": {
@@ -458,9 +478,18 @@
   },
 
   "vtex.menu@2.x:submenu.accordion#caracteristicas": {
-    "children": ["flex-layout.col#caracteristicas"],
+    "children": ["flex-layout.col#prdesc"],
     "props": {
       "blockClass": "caracteristicas"
+    }
+  },
+  "flex-layout.col#prdesc":{
+    "children":[
+      "product-specifications"
+    ],"props": {
+      "horizontalAlign": "left",
+      "blockClass":"descfeaturess",
+      "paddingLeft": 7
     }
   },
 
@@ -477,7 +506,8 @@
 
   "product-reviews":{
     "props":{
-      "reviewsHeading":"HOLA"
+      "reviewsHeading":"HOLA",
+      "blockClass":"margen"
     }
   },
 
@@ -485,7 +515,7 @@
 "flex-layout.row#alsoCanYouInterested": {
   "children": ["rich-text#ACYI"],
     "props":{
-      "blockClass":"Interested"
+      "blockClass":["Interested","margen"]
     }
   },
   "rich-text#ACYI": {
@@ -498,7 +528,10 @@
 /* ----------- /Also can you interested Label ------------ */
 /* ------------ Carousel ------------ */
 "flex-layout.row#shelf": {
-  "children": ["list-context.product-list#demo1"]
+  "children": ["list-context.product-list#demo1"],
+  "props":{
+    "blockClass":"margen"
+  }
 },
   "list-context.product-list#demo1": {
     "blocks": ["product-summary.shelf"],
@@ -518,6 +551,15 @@
       "fullWidth": false,
       "blockClass": "shelf"
     }
+  },
+
+  "shelf.relatedProducts":{
+    "props":{
+      
+    },
+    "blocks":[
+      "product-summary.shelf"
+    ]
   }
 
 /* ----------- /Carousel ------------ */

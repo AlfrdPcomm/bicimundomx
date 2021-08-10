@@ -2,7 +2,9 @@
   "product-specification-group#table": {
     "children": [
       "flex-layout.row#spec-group"
-    ]
+    ],"props":{
+      "blockClass":"margen"
+    }
   },
   "flex-layout.row#spec-group": {
     "props": {

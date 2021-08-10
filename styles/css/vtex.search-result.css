@@ -30,7 +30,9 @@
 
 :global(.vtex-breadcrumb-1-x-container)
 :global(.vtex-breadcrumb-1-x-homeLink)::after{
+  position: relative;
   content: "Inicio";
+  bottom: 2px;
 }
 
 :global(.vtex-breadcrumb-1-x-container){
@@ -43,6 +45,11 @@
   color: #242424;
 }
 
+:global(.vtex-flex-layout-0-x-flexRow--margen),
+:global(.vtex-search-result-3-x-container--layout){
+  padding-right: 3%;
+  padding-left: 3%;
+}
 /* -------------------  /Breadcrum style ------------------*/
 /* ------------------- OrderBy style --------------------- */
 
@@ -102,12 +109,16 @@
 :global(.vtex-flex-layout-0-x-flexCol--filterCol){
   border: .5px solid #707070;
   padding: 15px;
+  min-width: 311px !important;
 }
+
+
 
 :global(.vtex-search-result-3-x-filterMessage){
   color: #385DAE !important; 
   font-size: 20px ;
   font-family: 'Lato-Bold';
+  text-transform: uppercase;
 
 }
 
@@ -117,6 +128,9 @@
 
 :global(.vtex-search-result-3-x-filterTitle){
   color: #385DAE !important;
+  font-family: 'Lato-Bold';
+  font-size: 16px;
+  text-transform: uppercase;
 }
 
 :global(.vtex-checkbox__label){
@@ -124,6 +138,14 @@
   font-size: 14px;
 }
 
+:global(.vtex-slider__right-value),
+:global(.vtex-slider__left-value){
+  font-family: 'Lato-Regular';
+  font-size: 15px;
+}
 
+:global(.vtex-slider__values-container){
+  justify-content: center;
+}
 
 /*-------------------- Final Filter col --------------------------*/

@@ -2,6 +2,7 @@
   "product-summary.shelf": {
     "children": [
       "stack-layout#prodsum",
+      "product-summary-space", 
       "product-summary-sku-selector",
       "product-summary-brand",
       "product-summary-name",
@@ -73,9 +74,8 @@
       "verticalAlign":"middle"
     },
     "children": [
-      "product-selling-price#summary",
-      "product-list-price#summary"
-      
+      "product-list-price#summary",
+      "product-selling-price#summary"      
     ]
   },
   "product-installments#summary": {
