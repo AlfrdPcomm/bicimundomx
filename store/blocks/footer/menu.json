@@ -515,7 +515,7 @@
   "menu-item#clothing-mobile": {
     "props": {
       "itemProps": {
-        "tagTitle": "Clothing",
+        "tagTitle": "Catergorías",
         "text": "CATEGORIAS"
       },
       "blockClass" : "titleTitleFooterMobile"

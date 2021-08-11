@@ -1139,3 +1139,76 @@
     :global(.vtex-button__label){
       color: #0F2A65;
     }
+
+:global(.vtex-reviews-and-ratings-2-x-formContainer){
+  font-family: 'Lato-Bold';
+}
+:global(.vtex-reviews-and-ratings-2-x-writeReviewButton){
+  color: #000000;
+  font-family: 'Lato-Regular';
+}
+
+
+:global(.vtex-reviews-and-ratings-2-x-starpicker)
+  :global(.vtex-input__label),
+:global(.vtex-reviews-and-ratings-2-x-formBottomLine)
+  :global(.vtex-input__label){
+    font-family: 'Lato-Regular';
+  }
+
+
+
+:global(.vtex-reviews-and-ratings-2-x-formSubmit)
+  :global(.vtex-button){
+    border-radius: 25px;
+}
+
+:global(.vtex-checkbox__inner-container){
+  background-color: #EB0045;
+  
+}
+
+
+:global(.vtex-my-orders-app-3-x-orderCard){
+  border-color: transparent;
+}
+
+
+:global(.vtex-my-orders-app-3-x-orderHeader){
+  border-radius: 15px 15px 0px 0px;
+  background-color: #f8f8f8;
+  font-family: 'Lato-Bold';
+}
+
+:global(.vtex-my-orders-app-3-x-orderBody){
+  border-radius:  0px 0px 15px 15px;
+  background-color: #f8f8f8;
+  font-family: 'Lato-Bold';
+}
+
+:global(.vtex-my-orders-app-3-x-font),
+:global(.vtex-my-orders-app-3-x-orderProductName){
+  color: #0F2A65;
+  font-family: 'Lato-Regular';
+}
+
+:global(.vtex-my-orders-app-3-x-detailsBtn){
+  background-color: #0F2A65;
+  color: #ffffff;
+  font-family: 'Lato-Bold';
+  border-radius: 20px;
+}
+
+:global(.vtex-modal__modal){
+  background-color: #0F2A65;
+  color: #ffffff;
+}
+
+:global(.vtex-modal__confirmation)
+  :global(.vtex-button){
+    border-radius: 20px;
+  }
+:global(.vtex-modal__confirmation){
+  border-top: 1px solid #EB0045;
+  padding-top: 15px;
+}

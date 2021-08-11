@@ -64,28 +64,64 @@
   "props": {
     "images": [
       {
-        "image": "assets/alubike.png"
+        "image": "arquivos/alubike.png"
       },
       {
-        "image": "assets/finishline.png"
+        "image": "arquivos/benotto.png"
       },
       {
-        "image": "assets/lazer.png"
+        "image": "arquivos/continental.png"
       },
       {
-        "image": "assets/saiguan.jpeg"
+        "image": "arquivos/camelback.png"
       },
       {
-        "image": "assets/shimano.png"
+        "image": "arquivos/giro.png"
       },
       {
-        "image": "assets/veloci.png"
+        "image": "arquivos/giant.png"
       },
       {
-        "image": "assets/vittoria.jpeg"
+        "image": "arquivos/kali.png"
       },
       {
-        "image": "assets/wtb.png"
+        "image": "arquivos/kenda.png"
+      },
+      {
+        "image": "arquivos/kmc.png"
+      },
+      {
+        "image": "arquivos/lazer.png"
+      },
+      {
+        "image": "arquivos/liv.png"
+      },
+      {
+        "image": "arquivos/lizardskins.png"
+      },
+      {
+        "image": "arquivos/neco.png"
+      },
+      {
+        "image": "arquivos/shimano.png"
+      },
+      {
+        "image": "arquivos/tacx.png"
+      },
+      {
+        "image": "arquivos/met.png"
+      },
+      {
+        "image": "arquivos/michelin.png"
+      },
+      {
+        "image": "arquivos/schwalbe.png"
+      },
+      {
+        "image": "arquivos/topeak.png"
+      },
+      {
+        "image": "arquivos/vital.png"
       }
     ]
   }
@@ -95,13 +131,12 @@
   "props": {
     "blockClass":"carrumarcas",
     "itemsPerPage": {
-      "desktop": 1,
+      "desktop":4,
       "tablet": 3,
       "phone": 1
     },
     "infinite": true,
-    "showNavigationArrows": "mobileOnly",
-    "showPaginationDots": "never"
+    "showPaginationDots":"mobileOnly"
   }
 },
 
@@ -503,7 +538,8 @@
   "flex-layout.row#marcas":{
     "title":"Row título Marcas",
     "children":[
-      "flex-layout.col#marcas"
+      "list-context.image-list#marcas"
+      //"flex-layout.col#marcas"
     ],"props":{
       "fullWidth":true
     }

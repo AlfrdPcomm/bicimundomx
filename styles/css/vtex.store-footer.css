@@ -380,24 +380,9 @@
     width: 100%;
   }
 
-  :global(.vtex-menu-2-x-accordionIcon--titleTitleFooterMobile--isClosed){
-    visibility: hidden;
-  }
 
-  :global(.vtex-menu-2-x-accordionIcon--titleTitleFooterMobile--isClosed)::before{
-    visibility:visible;
-    content: "\00a0\00a0\00a0\00a0";
-    display:inline-block ;
-    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"><path fill="none" stroke="%23ffffff" stroke-linecap="square" stroke-miterlimit="10" stroke-width="48" d="M112 184l144 144l144-144"/> </svg>')  no-repeat center left / contain;
-    background-repeat: no-repeat;
-    background-position:  0px;
-    background-size: 119% 100%;
-    padding-left: 0px;
-    padding-right: 0px;
-    white-space: pre-wrap;
-    height: 15px;
-    width: 15px;
-    /* padding-left: 200%; */
+  :global(.vtex-menu-2-x-accordionIcon--titleTitleFooterMobile--isClosed){
+    content: url(assets/expand18.png);
   }
 
   :global(.vtex-menu-2-x-menuItem--titleTitleFooterMobile){
@@ -416,10 +401,6 @@
   :global(.vtex-flex-layout-0-x-flexRowContent--payment-methods){
     padding-top: 0px;
   }
-
- 
-
-  
 
 
 }

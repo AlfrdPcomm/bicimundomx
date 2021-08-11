@@ -323,5 +323,40 @@
         "text": "Contact Us"
       }
     }
+  },
+
+
+
+  "menu-item#cats-mobile": {
+    "props": {
+      "itemProps": {
+        "tagTitle": "Catergorías",
+        "text": "ELIGE POR CATEGORÍAS"
+      },
+      "blockClass":"menprinfoo"
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#catsmob"]
+  },
+  "vtex.menu@2.x:submenu.accordion#catsmob": {
+    "children": ["vtex.menu@2.x:menu#catsmobile"],
+    "props":{
+      "blockClass":"submendrawh"
+    }
+  },
+
+  "vtex.menu@2.x:menu#catsmobile": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#acce1",
+      "menu-item#bicis1",
+      "menu-item#ropa1",
+      "menu-item#herra1",
+      "menu-item#repa1"
+
+    ]
   }
+
+  
 }

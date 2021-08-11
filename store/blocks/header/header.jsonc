@@ -255,7 +255,7 @@
 
   "menu#drawer": {
     "children": [
-      "menu-item#category",
+      "menu-item#cats-mobile",
       "menu-item#marcas",
       "menu-item#montana",
       "menu-item#carretera",

@@ -17,7 +17,7 @@
     },
     "image#re1": {
       "props": {
-        "src": "https://bicimundomx.vteximg.com.br/arquivos/f1.png",
+        "src": "assets/acertify.png",
         "maxHeight": "32px",
         "blockClass":"imgcredes"
       }
@@ -30,7 +30,7 @@
     },
     "image#re2": {
       "props": {
-        "src": "https://bicimundomx.vteximg.com.br/arquivos/f3.png",
+        "src": "assets/selloconf.png",
         "maxHeight": "32px",
         "blockClass":"imgcredes"
       }
