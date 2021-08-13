@@ -234,8 +234,7 @@
   "sku-selector":{
     "props":{
       "variationsSpacing": 3,
-      "showVariationsLabels": ["false"],
-      "showValueForVariation": ["image"],
+      "showValueForVariation": "all",
       "thumbnailImage": ["skuimg"]
     }
   },
