@@ -1236,3 +1236,17 @@
   font-family: 'Lato-Regular';
   font-size: 20px;
 }
+
+:global(.vtex-product-summary-2-x-SKUSelectorContainer) {
+  height: 400%;
+  margin: none 0;
+
+}
+
+:global(.vtex-store-components-3-x-skuSelectorSubcontainer) {
+  margin-bottom: .5rem;
+}
+
+:global(.vtex-store-components-3-x-skuSelectorTextContainer) {
+  margin-bottom: 0rem;
+}
