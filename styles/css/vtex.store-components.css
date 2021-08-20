@@ -1250,3 +1250,11 @@
 :global(.vtex-store-components-3-x-skuSelectorTextContainer) {
   margin-bottom: 0rem;
 }
+
+/* Delete cancel order buttons */
+:global(.vtex-my-orders-app-3-x-orderBody)
+  :global(.vtex-my-orders-app-3-x-cancelBtn),
+:global(.vtex-order-placed-2-x-orderOptionsWrapper)
+  :global(.vtex-order-placed-2-x-cancelOrderButton) {
+    display: none;
+}
