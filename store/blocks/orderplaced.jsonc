@@ -17,12 +17,41 @@
       "borderless": true
     },
     "children": [
-      "op-confirmation-icon",
-      "op-confirmation-title",
+      "flex-layout.row#icon",
+      "flex-layout.row#thanksRow",
       "op-confirmation-message",
       "flex-layout.row#confirmation-buttons"
     ]
   },
+
+  "flex-layout.row#icon":{
+    "children": [
+      "image#check-icon"    
+    ]
+  }, "image#check-icon":{
+    "props":{
+      "src":"/arquivos/check-circle.svg",
+      "width": 80,
+      "height": 80
+    }
+  }, 
+  
+  "flex-layout.row#thanksRow": {
+    "children":[
+      "rich-text#thanks"
+    ],
+    "props": {
+      "horizontalAlign": "right"
+    }
+  }, "rich-text#thanks": {
+    "title":"Texto Gracias",
+    "props":{
+      "text": "### GRACIAS POR LA COMPRA",
+      "blockClass": "thanks-text"
+    }
+  },
+
+
   "flex-layout.row#confirmation-buttons": {
     "props": {
       "blockClass": "confirmationButtons",
