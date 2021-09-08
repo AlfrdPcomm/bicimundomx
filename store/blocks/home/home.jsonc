@@ -401,17 +401,27 @@
   "flex-layout.col#contador":{
     "title":"Col Contador",
     "children":[
-      "rich-text#contador"
+      "flex-layout.row#contadorRow"
     ],"props":{
-      "horizontalAlign":"center"
+      "verticalAlign":"middle"
     }
   },"rich-text#contador":{
     "title":"Texto Contador",
     "props":{
-      "text":"## FINALIZA EN: ",
+      "text":"## FINALIZA EN ",
       "blockClass": "offcont"
     }
-  },      
+  },
+  "flex-layout.row#contadorRow" : {
+    "children":[
+      "rich-text#contador",
+      "countdown"
+    ],
+    "props":{
+      "horizontalAlign": "center",
+      "blockClass": "ofertaCount"
+    }
+  },
  //-------------------------- Final contador -------------------------
  //-------------------------- Inicio titulo lo mas vendido -------------------------
  "flex-layout.row#titleshelf":{

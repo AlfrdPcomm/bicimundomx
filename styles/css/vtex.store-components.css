@@ -1383,3 +1383,91 @@
 
 /* / Order placed */
 
+/* Countdown */
+
+:global(.vtex-flex--countdown-div){
+  margin-top: auto;
+    margin-bottom: auto;
+    font-size: 25px;
+    font-family: 'Lato-Italic';
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+:global(.vtex-flex--countdownHours0),
+:global(.vtex-flex--countdownHours1),
+:global(.vtex-flex--countdownMinutes0),
+:global(.vtex-flex--countdownMinutes1),
+:global(.vtex-flex--countdownSeconds0),
+:global(.vtex-flex--countdownSeconds1) {
+  padding-top: 4px;
+    padding-left: 9px;
+    padding-right: 9px;
+    padding-bottom: 7px;
+    background-color: #385DAE;
+    border-radius: 10px;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+:global(.vtex-flex--countdownSeparator) {
+  color: #0F2A65;
+  font-family: 'Lato-Regular';
+  font-weight: 800;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--ofertaCount)
+:global(.vtex-rich-text-0-x-container--offcont){
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+@media(max-width: 1024px) and (min-width: 640px ){
+  :global(.vtex-rich-text-0-x-headingLevel2--offcont) {
+    font-size: 20px !important;
+  }
+  :global(.vtex-flex--countdown-div) {
+    font-size: 12px !important;
+  }
+  :global(.vtex-flex-layout-0-x-flexRowContent--ofertaCount)
+  :global(.vtex-rich-text-0-x-container--offcont){
+    justify-content: left;
+  }
+}
+
+@media (max-width: 640px) {
+  
+  :global(.vtex-flex-layout-0-x-flexRowContent--ofertaCount) {
+    display: grid !important;
+  }
+  :global(.vtex-flex-layout-0-x-flexRowContent--ofertaCount)
+  :global(.vtex-rich-text-0-x-container--offcont) {
+    justify-content: center;
+  }
+  :global(.vtex-flex-layout-0-x-flexRow--ofertaCount)
+  :global(.vtex-rich-text-0-x-headingLevel2--offcont) {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 1024px) {
+  :global(.vtex-rich-text-0-x-container--offcont) {
+    padding-right: 5px !important;
+  }
+  :global(.vtex-rich-text-0-x-headingLevel2--offcont) {
+    font-size: 25px;
+  }
+
+  :global(.vtex-flex-layout-0-x-flexRowContent--ofertaCount) {
+    display: inline-flex;
+    padding-right: 4%;
+    padding-left: 4%;
+  }
+
+  :global(.vtex-flex--countdown-div) {
+    font-size: 20px;
+    
+  }
+}
+
+/* /Countdown */
